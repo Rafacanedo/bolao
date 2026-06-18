@@ -348,7 +348,8 @@ def load_settings():
             "points_champion": 0,
             "points_top_scorer": 0,
             "resolved_champion": False,
-            "resolved_top_scorer": False
+            "resolved_top_scorer": False,
+            "prediction_strategy": "ML"
         }
         with open(SETTINGS_PATH, "w") as f:
             json.dump(default, f, indent=2)
@@ -364,7 +365,8 @@ def load_settings():
         ("points_champion", 0),
         ("points_top_scorer", 0),
         ("resolved_champion", False),
-        ("resolved_top_scorer", False)
+        ("resolved_top_scorer", False),
+        ("prediction_strategy", "ML")
     ]:
         if k not in settings:
             settings[k] = v
@@ -403,123 +405,196 @@ def get_calibrated_total_goals():
         pass
     return 2.6
 
-# Calculate W/D/L and Score predictions based on weights
-def get_prediction_from_ratings(home, away):
-    ratings = {
-        "Argentina": 95, "France": 94, "Spain": 93, "England": 93, "Brazil": 92,
-        "Portugal": 91, "Belgium": 90, "Netherlands": 89, "Uruguay": 88, "Germany": 88,
-        "Croatia": 87, "Morocco": 86, "Colombia": 86, "USA": 83, "United States": 83,
-        "Japan": 82, "Switzerland": 82, "Austria": 81, "Senegal": 81, "Ecuador": 80,
-        "Iran": 80, "Sweden": 80, "Turkey": 79, "South Korea": 79, "Egypt": 78,
-        "Czechia": 78, "Czech Republic": 78, "Norway": 78, "Ivory Coast": 78,
-        "Algeria": 77, "Australia": 77, "Canada": 77, "Tunisia": 76, "Scotland": 76,
-        "Ghana": 75, "Saudi Arabia": 74, "Congo DR": 73, "RD Congo": 73, "Uzbekistan": 72,
-        "South Africa": 72, "Cape Verde Islands": 72, "Cape Verde": 72, "Qatar": 71,
-        "Panama": 71, "Iraq": 70, "Jordan": 70, "Haiti": 65, "New Zealand": 65,
-        "Curaçao": 64
-    }
+def load_team_metrics():
+    import sqlite3
+    db_path = "/home/rafa/Projects/bolao/bolao.db"
+    if not os.path.exists(db_path):
+        return {}
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT team_name, fifa_points, market_value_eur, pele_rating, pele_tilt FROM world_cup_teams")
+        rows = cursor.fetchall()
+        conn.close()
+        return {r[0]: {
+            "fifa_points": r[1],
+            "market_value": r[2],
+            "pele_rating": r[3],
+            "pele_tilt": r[4]
+        } for r in rows}
+    except Exception as e:
+        print(f"Erro ao carregar métricas das seleções do banco de dados: {e}")
+        return {}
+
+# Carrega métricas globais uma única vez na inicialização
+TEAM_METRICS = load_team_metrics()
+
+def get_pele_prob(home, away):
+    h_m = TEAM_METRICS.get(home, {"pele_rating": 1750.0, "pele_tilt": 0.0})
+    a_m = TEAM_METRICS.get(away, {"pele_rating": 1750.0, "pele_tilt": 0.0})
     
-    # Map team names if they are in Portuguese
-    team_map = {
-        "Espanha": "Spain", "Cabo Verde": "Cape Verde", "Bélgica": "Belgium", "Egito": "Egypt",
-        "Arábia Saudita": "Saudi Arabia", "Uruguai": "Uruguay", "Irã": "Iran",
-        "Nova Zelândia": "New Zealand", "França": "France", "Senegal": "Senegal",
-        "Iraque": "Iraq", "Noruega": "Norway", "Argentina": "Argentina", "Argélia": "Algeria",
-        "Áustria": "Austria", "Jordânia": "Jordan", "Portugal": "Portugal", "RD Congo": "Congo DR",
-        "Inglaterra": "England", "Croácia": "Croatia", "México": "Mexico",
-        "África do Sul": "South Africa", "Coreia do Sul": "South Korea",
-        "República Tcheca": "Czechia", "Canadá": "Canada", "Bósnia-Herzegovina": "Bosnia-Herzegovina",
-        "Estados Unidos": "United States", "Paraguai": "Paraguay", "Catar": "Qatar",
-        "Suíça": "Switzerland", "Brasil": "Brazil", "Marrocos": "Morocco", "Escócia": "Scotland",
-        "Haiti": "Haiti", "Austrália": "Australia", "Turquia": "Turkey", "Alemanha": "Germany",
-        "Curaçao": "Curaçao", "Holanda": "Netherlands", "Japão": "Japan",
-        "Costa do Marfim": "Ivory Coast", "Equador": "Equador", "Suécia": "Sweden",
-        "Tunísia": "Tunisia", "Gana": "Ghana", "Panamá": "Panama", "Uzbequistão": "Uzbekistan",
-        "Colômbia": "Colombia"
-    }
+    r_h = h_m["pele_rating"]
+    r_a = a_m["pele_rating"]
     
-    home_en = team_map.get(home, home)
-    away_en = team_map.get(away, away)
+    # Bônus de Host (EUA, México e Canadá jogando em casa na América do Norte)
+    if home in ["Estados Unidos", "México", "Canadá"]:
+        r_h += 50.0
+    if away in ["Estados Unidos", "México", "Canadá"]:
+        r_a += 50.0
+        
+    diff = r_h - r_a
+    base_goals = get_calibrated_total_goals() / 2.0
     
-    r_home = ratings.get(home_en, 75.0)
-    r_away = ratings.get(away_en, 75.0)
+    # Ajuste de Tilt (postura ultra-ofensiva ou defensiva)
+    tilt_h = h_m["pele_tilt"]
+    tilt_a = a_m["pele_tilt"]
+    tilt_adjust = (tilt_h + tilt_a) * 0.5
     
-    diff = r_home - r_away
+    lambda_h = max(0.2, base_goals + 0.05 * (diff / 10.0) + tilt_adjust)
+    lambda_a = max(0.2, base_goals - 0.05 * (diff / 10.0) + tilt_adjust)
     
-    avg_goals = get_calibrated_total_goals()
-    base_goals = avg_goals / 2.0
+    score_probs = calculate_score_probs(lambda_h, lambda_a)
+    h_prob = sum(p for (h, a), p in score_probs.items() if h > a)
+    d_prob = sum(p for (h, a), p in score_probs.items() if h == a)
+    a_prob = sum(p for (h, a), p in score_probs.items() if h < a)
+    
+    s = h_prob + d_prob + a_prob
+    return {"home": h_prob / s, "draw": d_prob / s, "away": a_prob / s}
+
+def get_fifa_tm_prob(home, away):
+    h_m = TEAM_METRICS.get(home, {"fifa_points": 1500.0, "market_value": 100.0})
+    a_m = TEAM_METRICS.get(away, {"fifa_points": 1500.0, "market_value": 100.0})
+    
+    # Normalização de pontos FIFA (base 1200)
+    f_h = (h_m["fifa_points"] - 1200.0) / 10.0
+    f_a = (a_m["fifa_points"] - 1200.0) / 10.0
+    
+    # Normalização do preço do elenco no Transfermarkt (escala logarítmica)
+    tm_h = 20.0 * math.log10(max(1.0, h_m["market_value"]))
+    tm_a = 20.0 * math.log10(max(1.0, a_m["market_value"]))
+    
+    # Rating composto: 45% FIFA + 55% Transfermarkt
+    r_h = 0.45 * f_h + 0.55 * tm_h
+    r_a = 0.45 * f_a + 0.55 * tm_a
+    
+    # Bônus de Host
+    if home in ["Estados Unidos", "México", "Canadá"]:
+        r_h += 5.0
+    if away in ["Estados Unidos", "México", "Canadá"]:
+        r_a += 5.0
+        
+    diff = r_h - r_a
+    base_goals = get_calibrated_total_goals() / 2.0
     
     lambda_h = max(0.2, base_goals + 0.05 * diff)
     lambda_a = max(0.2, base_goals - 0.05 * diff)
     
-    # Calculate W/D/L probabilities from score probs (conceptually)
     score_probs = calculate_score_probs(lambda_h, lambda_a)
-    h_prob = 0.0
-    d_prob = 0.0
-    a_prob = 0.0
-    for (h, a), p in score_probs.items():
-        if h > a:
-            h_prob += p
-        elif h < a:
-            a_prob += p
-        else:
-            d_prob += p
-            
+    h_prob = sum(p for (h, a), p in score_probs.items() if h > a)
+    d_prob = sum(p for (h, a), p in score_probs.items() if h == a)
+    a_prob = sum(p for (h, a), p in score_probs.items() if h < a)
+    
     s = h_prob + d_prob + a_prob
-    if s > 0:
-        h_prob /= s
-        d_prob /= s
-        a_prob /= s
-    else:
-        h_prob, d_prob, a_prob = 0.40, 0.30, 0.30
-        
-    return h_prob, d_prob, a_prob
+    return {"home": h_prob / s, "draw": d_prob / s, "away": a_prob / s}
+
+def get_prediction_from_ratings(home, away):
+    # Delegação integrada para compatibilidade
+    pele = get_pele_prob(home, away)
+    fifa_tm = get_fifa_tm_prob(home, away)
+    
+    h_prob = 0.60 * pele["home"] + 0.40 * fifa_tm["home"]
+    d_prob = 0.60 * pele["draw"] + 0.40 * fifa_tm["draw"]
+    a_prob = 0.60 * pele["away"] + 0.40 * fifa_tm["away"]
+    
+    s = h_prob + d_prob + a_prob
+    return h_prob / s, d_prob / s, a_prob / s
 
 def compute_predictions(match, settings):
-    # Check if this is a fallback prediction (33/33/33 or prediction missing)
     opta = match.get("prob_opta", {"home": 0.333, "draw": 0.333, "away": 0.334})
     sofa = match.get("prob_sofascore", {"home": 0.333, "draw": 0.333, "away": 0.334})
     
-    is_fallback = False
-    if abs(opta.get("home", 0.333) - 0.333) < 0.01 and abs(opta.get("draw", 0.333) - 0.333) < 0.01:
-        is_fallback = True
+    is_opta_fallback = abs(opta.get("home", 0.333) - 0.333) < 0.01
+    is_sofa_fallback = abs(sofa.get("home", 0.333) - 0.333) < 0.01
+    
+    pele_prob = get_pele_prob(match["home_team"], match["away_team"])
+    fifa_tm_prob = get_fifa_tm_prob(match["home_team"], match["away_team"])
+    odds_prob = get_odds_prob(match["odds"])
+    
+    # Pesos padrão do ensemble
+    w_pele = 0.35
+    w_fifa_tm = 0.25
+    w_odds = 0.40
+    
+    if not is_opta_fallback and not is_sofa_fallback:
+        w_pele = 0.30
+        w_fifa_tm = 0.20
+        w_odds = 0.30
+        w_opta = float(settings.get("weight_opta", 0.12))
+        w_sofa = float(settings.get("weight_sofascore", 0.08))
         
-    if is_fallback:
-        consensus_h, consensus_d, consensus_a = get_prediction_from_ratings(match["home_team"], match["away_team"])
+        sum_w = w_pele + w_fifa_tm + w_odds + w_opta + w_sofa
+        w_pele /= sum_w
+        w_fifa_tm /= sum_w
+        w_odds /= sum_w
+        w_opta /= sum_w
+        w_sofa /= sum_w
+        
+        consensus_h = pele_prob["home"] * w_pele + fifa_tm_prob["home"] * w_fifa_tm + odds_prob["home"] * w_odds + opta["home"] * w_opta + sofa["home"] * w_sofa
+        consensus_d = pele_prob["draw"] * w_pele + fifa_tm_prob["draw"] * w_fifa_tm + odds_prob["draw"] * w_odds + opta["draw"] * w_opta + sofa["draw"] * w_sofa
+        consensus_a = pele_prob["away"] * w_pele + fifa_tm_prob["away"] * w_fifa_tm + odds_prob["away"] * w_odds + opta["away"] * w_opta + sofa["away"] * w_sofa
     else:
-        w_opta = float(settings.get("weight_opta", 0.30))
-        w_sofa = float(settings.get("weight_sofascore", 0.30))
-        w_odds = float(settings.get("weight_odds", 0.40))
+        consensus_h = pele_prob["home"] * w_pele + fifa_tm_prob["home"] * w_fifa_tm + odds_prob["home"] * w_odds
+        consensus_d = pele_prob["draw"] * w_pele + fifa_tm_prob["draw"] * w_fifa_tm + odds_prob["draw"] * w_odds
+        consensus_a = pele_prob["away"] * w_pele + fifa_tm_prob["away"] * w_fifa_tm + odds_prob["away"] * w_odds
         
-        odds_prob = get_odds_prob(match["odds"])
-        consensus_h = opta["home"] * w_opta + sofa["home"] * w_sofa + odds_prob["home"] * w_odds
-        consensus_d = opta["draw"] * w_opta + sofa["draw"] * w_sofa + odds_prob["draw"] * w_odds
-        consensus_a = opta["away"] * w_opta + sofa["away"] * w_sofa + odds_prob["away"] * w_odds
-        
-        # Normalise
-        s = consensus_h + consensus_d + consensus_a
-        consensus_h /= s
-        consensus_d /= s
-        consensus_a /= s
-        
-    # Estimate lambda / mu (Poisson expected goals)
+    s = consensus_h + consensus_d + consensus_a
+    consensus_h /= s
+    consensus_d /= s
+    consensus_a /= s
+    
+    # Expectativa de gols de Poisson
     total_goals = get_calibrated_total_goals()
     home_share = consensus_h + 0.5 * consensus_d
     lambda_h = total_goals * home_share
     lambda_a = total_goals * (1.0 - home_share)
     
-    # Score probabilities
+    # Probabilidade crua de gols
     score_probs = calculate_score_probs(lambda_h, lambda_a)
     
-    # Find optimal sweepstakes guess (max Expected Points)
-    best_guess = (1, 1)
-    max_ep = -1.0
-    for gh in range(4):
-        for ga in range(4):
-            ep = calculate_expected_points(gh, ga, score_probs)
-            if ep > max_ep:
-                max_ep = ep
-                best_guess = (gh, ga)
+    # Calibração de empates (Adaptação Dixon-Coles)
+    raw_draw = sum(p for (h, a), p in score_probs.items() if h == a)
+    if consensus_d > raw_draw:
+        diff_d = consensus_d - raw_draw
+        score_probs[(1, 1)] = score_probs.get((1, 1), 0.0) + diff_d * 0.60
+        score_probs[(0, 0)] = score_probs.get((0, 0), 0.0) + diff_d * 0.30
+        score_probs[(2, 2)] = score_probs.get((2, 2), 0.0) + diff_d * 0.10
+        
+        s_probs = sum(score_probs.values())
+        for k in score_probs:
+            score_probs[k] /= s_probs
+    elif consensus_d < raw_draw and raw_draw > 0:
+        factor = consensus_d / raw_draw
+        for (h, a) in list(score_probs.keys()):
+            if h == a:
+                score_probs[(h, a)] *= factor
+        s_probs = sum(score_probs.values())
+        for k in score_probs:
+            score_probs[k] /= s_probs
+            
+    # Escolha do palpite ideal baseada na estratégia configurada (ML ou EP)
+    strategy = settings.get("prediction_strategy", "ML")
+    if strategy == "ML":
+        best_guess = sorted(score_probs.items(), key=lambda x: x[1], reverse=True)[0][0]
+        max_ep = calculate_expected_points(best_guess[0], best_guess[1], score_probs)
+    else:
+        best_guess = (1, 1)
+        max_ep = -1.0
+        for gh in range(6):  # Expandido para 0-5 gols
+            for ga in range(6):
+                ep = calculate_expected_points(gh, ga, score_probs)
+                if ep > max_ep:
+                    max_ep = ep
+                    best_guess = (gh, ga)
                 
     return {
         "consensus": (consensus_h, consensus_d, consensus_a),
