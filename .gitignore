@@ -1,0 +1,26 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Databases
+bolao.db
+bolao.db-journal
+
+# Sensitive local configurations (contains passwords)
+settings.json
+
+# Local physical backups
+overhauls/
+
+# OS files
+.DS_Store
+Thumbs.db

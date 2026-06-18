@@ -1,0 +1,2521 @@
+[
+  {
+    "id": "WC26-11",
+    "date": "2026-06-11 13:00",
+    "home_team": "México",
+    "away_team": "África do Sul",
+    "home_emoji": "🇲🇽",
+    "away_emoji": "🇿🇦",
+    "stage": "Fase de Grupos - Grupo A",
+    "venue": "Mexico City Stadium (Cidade do México, México)",
+    "weather": "Clima ensolarado de altitude.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.55,
+      "draw": 0.25,
+      "away": 0.2
+    },
+    "prob_sofascore": {
+      "home": 0.52,
+      "draw": 0.27,
+      "away": 0.21
+    },
+    "odds": {
+      "home": 1.75,
+      "draw": 3.5,
+      "away": 4.8
+    },
+    "tactical_analysis": "O México pressionou alto impulsionado pela torcida no jogo de abertura. A África do Sul jogou na retranca buscando contra-ataques rápidos.",
+    "key_factors": "Estreia em casa na altitude.",
+    "pro_opinion": "Casimiro previu vitória segura do México por jogar em casa na estreia da Copa.",
+    "cheeky_prediction": "2 - 0. Vitória confortável do México na estreia em casa.",
+    "home_score": 2,
+    "away_score": 0,
+    "external_ids": {
+      "scorepick": 21
+    }
+  },
+  {
+    "id": "WC26-12",
+    "date": "2026-06-11 16:00",
+    "home_team": "Coreia do Sul",
+    "away_team": "República Tcheca",
+    "home_emoji": "🇰🇷",
+    "away_emoji": "🇨🇿",
+    "stage": "Fase de Grupos - Grupo A",
+    "venue": "Guadalajara Stadium (Guadalajara, México)",
+    "weather": "Clima ameno.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.4,
+      "draw": 0.3,
+      "away": 0.3
+    },
+    "prob_sofascore": {
+      "home": 0.38,
+      "draw": 0.31,
+      "away": 0.31
+    },
+    "odds": {
+      "home": 2.3,
+      "draw": 3.1,
+      "away": 3.2
+    },
+    "tactical_analysis": "A velocidade coreana nas transições superou a imposição física dos tchecos.",
+    "key_factors": "Velocidade de Son Heung-min contra a lenta zaga tcheca.",
+    "pro_opinion": "Tiago Leifert apostou no dinamismo coreano na estreia.",
+    "cheeky_prediction": "2 - 1. A velocidade da Coreia deve prevalecer em jogo pegado.",
+    "home_score": 2,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 22
+    }
+  },
+  {
+    "id": "WC26-13",
+    "date": "2026-06-12 13:00",
+    "home_team": "Canadá",
+    "away_team": "Bósnia-Herzegovina",
+    "home_emoji": "🇨🇦",
+    "away_emoji": "🇧🇦",
+    "stage": "Fase de Grupos - Grupo B",
+    "venue": "Toronto Stadium (Toronto, Canadá)",
+    "weather": "Clima temperado agradável.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.45,
+      "draw": 0.28,
+      "away": 0.27
+    },
+    "prob_sofascore": {
+      "home": 0.42,
+      "draw": 0.29,
+      "away": 0.29
+    },
+    "odds": {
+      "home": 2.1,
+      "draw": 3.25,
+      "away": 3.5
+    },
+    "tactical_analysis": "O Canadá dominou a posse, mas a Bósnia se defendeu bem e arrancou o empate.",
+    "key_factors": "Apoio da torcida canadense em Toronto.",
+    "pro_opinion": "Arnaldo Ribeiro esperava um jogo truncado e estudado.",
+    "cheeky_prediction": "1 - 1. O favoritismo canadense deve ser freado pela consistência tática bósnia.",
+    "home_score": 1,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 23
+    }
+  },
+  {
+    "id": "WC26-14",
+    "date": "2026-06-12 16:00",
+    "home_team": "Estados Unidos",
+    "away_team": "Paraguai",
+    "home_emoji": "🇺🇸",
+    "away_emoji": "🇵🇾",
+    "stage": "Fase de Grupos - Grupo D",
+    "venue": "Los Angeles Stadium (Los Angeles, EUA)",
+    "weather": "Céu limpo, clima seco.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.6,
+      "draw": 0.24,
+      "away": 0.16
+    },
+    "prob_sofascore": {
+      "home": 0.58,
+      "draw": 0.25,
+      "away": 0.17
+    },
+    "odds": {
+      "home": 1.6,
+      "draw": 3.7,
+      "away": 5.5
+    },
+    "tactical_analysis": "Os EUA atropelaram pelas pontas com Pulisic em tarde inspirada.",
+    "key_factors": "Elenco americano forte jogando em casa.",
+    "pro_opinion": "Casimiro previu vitória segura dos americanos empurrados pela torcida de LA.",
+    "cheeky_prediction": "3 - 0. Domínio completo dos EUA jogando em Los Angeles.",
+    "home_score": 4,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 24
+    }
+  },
+  {
+    "id": "WC26-15",
+    "date": "2026-06-13 11:00",
+    "home_team": "Catar",
+    "away_team": "Suíça",
+    "home_emoji": "🇶🇦",
+    "away_emoji": "🇨🇭",
+    "stage": "Fase de Grupos - Grupo B",
+    "venue": "San Francisco Stadium (San Francisco, EUA)",
+    "weather": "Vento moderado.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.25,
+      "draw": 0.29,
+      "away": 0.46
+    },
+    "prob_sofascore": {
+      "home": 0.23,
+      "draw": 0.3,
+      "away": 0.47
+    },
+    "odds": {
+      "home": 3.7,
+      "draw": 3.25,
+      "away": 2.0
+    },
+    "tactical_analysis": "A Suíça dominou as ações, mas o Catar conseguiu o empate em jogada aérea isolada.",
+    "key_factors": "Organização tática da Suíça contra a motivação catariana.",
+    "pro_opinion": "Mauro Cezar destacou o pragmatismo da Suíça.",
+    "cheeky_prediction": "0 - 1. Suíça vence no detalhe tático.",
+    "home_score": 1,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 25
+    }
+  },
+  {
+    "id": "WC26-16",
+    "date": "2026-06-13 14:00",
+    "home_team": "Brasil",
+    "away_team": "Marrocos",
+    "home_emoji": "🇧🇷",
+    "away_emoji": "🇲🇦",
+    "stage": "Fase de Grupos - Grupo C",
+    "venue": "New York New Jersey Stadium (East Rutherford, EUA)",
+    "weather": "Clima quente e úmido.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.62,
+      "draw": 0.23,
+      "away": 0.15
+    },
+    "prob_sofascore": {
+      "home": 0.6,
+      "draw": 0.24,
+      "away": 0.16
+    },
+    "odds": {
+      "home": 1.55,
+      "draw": 3.8,
+      "away": 6.0
+    },
+    "tactical_analysis": "O Brasil sofreu com a forte marcação e o bloco médio de Marrocos, que empatou a partida.",
+    "key_factors": "Estreia da Seleção Brasileira com alta expectativa.",
+    "pro_opinion": "Tiago Leifert alertou para a qualidade defensiva do Marrocos, sensação da última Copa.",
+    "cheeky_prediction": "2 - 1. O talento individual do Brasil decide contra a retranca marroquina.",
+    "home_score": 1,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 26
+    }
+  },
+  {
+    "id": "WC26-17",
+    "date": "2026-06-13 17:00",
+    "home_team": "Escócia",
+    "away_team": "Haiti",
+    "home_emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "away_emoji": "🇭🇹",
+    "stage": "Fase de Grupos - Grupo C",
+    "venue": "Boston Stadium (Boston, EUA)",
+    "weather": "Tarde nublada, temperatura amena.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.65,
+      "draw": 0.22,
+      "away": 0.13
+    },
+    "prob_sofascore": {
+      "home": 0.62,
+      "draw": 0.23,
+      "away": 0.15
+    },
+    "odds": {
+      "home": 1.5,
+      "draw": 4.0,
+      "away": 7.0
+    },
+    "tactical_analysis": "Jogo de ataque contra defesa, decidido em uma cabeçada em escanteio.",
+    "key_factors": "Força física e jogo aéreo escocês.",
+    "pro_opinion": "Arnaldo Ribeiro indicou vitória apertada dos escoceses pela limitação técnica haitiana.",
+    "cheeky_prediction": "2 - 0. Escócia vence sem grandes sustos na bola aérea.",
+    "home_score": 1,
+    "away_score": 0,
+    "external_ids": {
+      "scorepick": 27
+    }
+  },
+  {
+    "id": "WC26-18",
+    "date": "2026-06-14 13:00",
+    "home_team": "Austrália",
+    "away_team": "Turquia",
+    "home_emoji": "🇦🇺",
+    "away_emoji": "🇹🇷",
+    "stage": "Fase de Grupos - Grupo D",
+    "venue": "BC Place (Vancouver, Canadá)",
+    "weather": "Clima ameno, estádio fechado.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.35,
+      "draw": 0.28,
+      "away": 0.37
+    },
+    "prob_sofascore": {
+      "home": 0.33,
+      "draw": 0.29,
+      "away": 0.38
+    },
+    "odds": {
+      "home": 2.8,
+      "draw": 3.2,
+      "away": 2.5
+    },
+    "tactical_analysis": "A Austrália surpreendeu com forte marcação sob pressão e eficiência nas poucas finalizações.",
+    "key_factors": "Turquia ligeiramente favorita no papel, mas Austrália é muito física.",
+    "pro_opinion": "Casimiro achava o confronto muito equilibrado.",
+    "cheeky_prediction": "1 - 1. Placar provável pelo equilíbrio técnico.",
+    "home_score": 2,
+    "away_score": 0,
+    "external_ids": {
+      "scorepick": 28
+    }
+  },
+  {
+    "id": "WC26-19",
+    "date": "2026-06-14 16:00",
+    "home_team": "Alemanha",
+    "away_team": "Curaçao",
+    "home_emoji": "🇩🇪",
+    "away_emoji": "🇨🇼",
+    "stage": "Fase de Grupos - Grupo E",
+    "venue": "Houston Stadium (Houston, EUA)",
+    "weather": "Clima muito abafado.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.9,
+      "draw": 0.08,
+      "away": 0.02
+    },
+    "prob_sofascore": {
+      "home": 0.88,
+      "draw": 0.09,
+      "away": 0.03
+    },
+    "odds": {
+      "home": 1.08,
+      "draw": 10.0,
+      "away": 26.0
+    },
+    "tactical_analysis": "Massacre tático e técnico da Alemanha, goleando sem dificuldades.",
+    "key_factors": "Ampla superioridade alemã.",
+    "pro_opinion": "Tiago Leifert previu uma goleada histórica logo na estreia alemã.",
+    "cheeky_prediction": "5 - 0. Vitória massiva alemã.",
+    "home_score": 7,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 29
+    }
+  },
+  {
+    "id": "WC26-20",
+    "date": "2026-06-14 19:00",
+    "home_team": "Holanda",
+    "away_team": "Japão",
+    "home_emoji": "🇳🇱",
+    "away_emoji": "🇯🇵",
+    "stage": "Fase de Grupos - Grupo F",
+    "venue": "Dallas Stadium (Dallas, EUA)",
+    "weather": "Temperatura controlada.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.52,
+      "draw": 0.26,
+      "away": 0.22
+    },
+    "prob_sofascore": {
+      "home": 0.5,
+      "draw": 0.27,
+      "away": 0.23
+    },
+    "odds": {
+      "home": 1.85,
+      "draw": 3.5,
+      "away": 4.2
+    },
+    "tactical_analysis": "Partida franca e ofensiva, com o Japão buscando duas vezes o empate.",
+    "key_factors": "Troca de passes rápidos do Japão contra a solidez defensiva holandesa.",
+    "pro_opinion": "Mauro Cezar previu dificuldades para os holandeses contra a velocidade japonesa.",
+    "cheeky_prediction": "2 - 1. Holanda vence apertado no talento individual.",
+    "home_score": 2,
+    "away_score": 2,
+    "external_ids": {
+      "scorepick": 30
+    }
+  },
+  {
+    "id": "WC26-21",
+    "date": "2026-06-14 22:00",
+    "home_team": "Costa do Marfim",
+    "away_team": "Equador",
+    "home_emoji": "🇨🇮",
+    "away_emoji": "🇪🇨",
+    "stage": "Fase de Grupos - Grupo E",
+    "venue": "Philadelphia Stadium (Philadelphia, EUA)",
+    "weather": "Clima fresco.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.38,
+      "draw": 0.3,
+      "away": 0.32
+    },
+    "prob_sofascore": {
+      "home": 0.36,
+      "draw": 0.31,
+      "away": 0.33
+    },
+    "odds": {
+      "home": 2.6,
+      "draw": 3.1,
+      "away": 2.8
+    },
+    "tactical_analysis": "A Costa do Marfim conseguiu neutralizar Enner Valencia e marcou o gol da vitória no segundo tempo.",
+    "key_factors": "Força física dos marfinenses contra o jogo vertical equatoriano.",
+    "pro_opinion": "Arnaldo Ribeiro esperava equilíbrio total e poucos gols.",
+    "cheeky_prediction": "1 - 1. Empate com cara de estreia truncada.",
+    "home_score": 1,
+    "away_score": 0,
+    "external_ids": {
+      "scorepick": 31
+    }
+  },
+  {
+    "id": "WC26-22",
+    "date": "2026-06-14 23:30",
+    "home_team": "Suécia",
+    "away_team": "Tunísia",
+    "home_emoji": "🇸🇪",
+    "away_emoji": "🇹🇳",
+    "stage": "Fase de Grupos - Grupo F",
+    "venue": "Monterrey Stadium (Monterrey, México)",
+    "weather": "Calor moderado.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.55,
+      "draw": 0.26,
+      "away": 0.19
+    },
+    "prob_sofascore": {
+      "home": 0.52,
+      "draw": 0.28,
+      "away": 0.2
+    },
+    "odds": {
+      "home": 1.75,
+      "draw": 3.5,
+      "away": 4.8
+    },
+    "tactical_analysis": "Goleada expressiva da Suécia explorando os lados do campo sob forte calor.",
+    "key_factors": "Jogo físico e organização tática sueca.",
+    "pro_opinion": "Casimiro indicava amplo favoritismo sueco.",
+    "cheeky_prediction": "2 - 0. Suécia vence com tranquilidade na estreia.",
+    "home_score": 5,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 32
+    }
+  },
+  {
+    "id": "WC26-01",
+    "date": "2026-06-15 13:00",
+    "home_team": "Espanha",
+    "away_team": "Cabo Verde",
+    "home_emoji": "🇪🇸",
+    "away_emoji": "🇨🇻",
+    "stage": "Fase de Grupos - Grupo H",
+    "venue": "Atlanta Stadium (Atlanta, EUA)",
+    "weather": "Calor intenso, umidade moderada.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.8,
+      "draw": 0.14,
+      "away": 0.06
+    },
+    "prob_sofascore": {
+      "home": 0.76,
+      "draw": 0.16,
+      "away": 0.08
+    },
+    "odds": {
+      "home": 1.22,
+      "draw": 5.8,
+      "away": 13.0
+    },
+    "tactical_analysis": "A Espanha deve dominar completamente a posse de bola no seu clássico estilo de controle posicional, com Lamine Yamal e Nico Williams explorando os lados do campo. Cabo Verde tentará se fechar em bloco baixo e contra-atacar em velocidade.",
+    "key_factors": "Espanha completa com Rodri no meio-campo. Cabo Verde tem boa solidez física, mas desfalques na criação criativa.",
+    "pro_opinion": "Tiago Leifert destaca o favoritismo absoluto da Espanha, prevendo que o time espanhol deve controlar as ações por completo. Arnaldo Ribeiro alerta para a forte retranca de Cabo Verde, sugerindo que se a Espanha não marcar cedo, a partida pode ganhar contornos dramáticos.",
+    "cheeky_prediction": "3 - 0. A Espanha vai atropelar taticamente, com Yamal e Nico brilhando pelas pontas sob forte calor em Atlanta.",
+    "home_score": 0,
+    "away_score": 0,
+    "external_ids": {
+      "scorepick": 33
+    }
+  },
+  {
+    "id": "WC26-02",
+    "date": "2026-06-15 18:00",
+    "home_team": "Bélgica",
+    "away_team": "Egito",
+    "home_emoji": "🇧🇪",
+    "away_emoji": "🇪🇬",
+    "stage": "Fase de Grupos - Grupo G",
+    "venue": "BC Place (Vancouver, Canadá)",
+    "weather": "Temperatura agradável (estádio fechado/teto retrátil).",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.58,
+      "draw": 0.24,
+      "away": 0.18
+    },
+    "prob_sofascore": {
+      "home": 0.54,
+      "draw": 0.26,
+      "away": 0.2
+    },
+    "odds": {
+      "home": 1.7,
+      "draw": 3.65,
+      "away": 4.8
+    },
+    "tactical_analysis": "Bélgica entra em fase de transição, mas ainda conta com a genialidade de Kevin De Bruyne na criação. O Egito joga sob um esquema compacto e foca em transições rápidas para acionar Mohamed Salah pela direita.",
+    "key_factors": "Bélgica com dúvidas na zaga (Vertonghen aposentado/lesionado). Egito completo e extremamente motivado.",
+    "pro_opinion": "Casimiro (CazéTV) comenta que o Egito é uma seleção muito chata de enfrentar e que Salah sempre tira um coelho da cartola. Thiago Asmar indica que a zaga da Bélgica em transição é o calcanhar de aquiles que o Egito tentará explorar.",
+    "cheeky_prediction": "1 - 1. O palpite ousado é um empate com Salah marcando no contra-ataque contra a lenta zaga belga.",
+    "home_score": 1,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 34
+    }
+  },
+  {
+    "id": "WC26-03",
+    "date": "2026-06-15 21:00",
+    "home_team": "Arábia Saudita",
+    "away_team": "Uruguai",
+    "home_emoji": "🇸🇦",
+    "away_emoji": "🇺🇾",
+    "stage": "Fase de Grupos - Grupo H",
+    "venue": "Miami Stadium (Miami, EUA)",
+    "weather": "Clima abafado típico da Flórida.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.12,
+      "draw": 0.22,
+      "away": 0.66
+    },
+    "prob_sofascore": {
+      "home": 0.14,
+      "draw": 0.24,
+      "away": 0.62
+    },
+    "odds": {
+      "home": 7.0,
+      "draw": 4.2,
+      "away": 1.45
+    },
+    "tactical_analysis": "O Uruguai de Marcelo Bielsa vai pressionar alto e imprimir um ritmo de jogo extremamente intenso com Fede Valverde no meio e Darwin Núñez no ataque. A Arábia Saudita tentará cadenciar o ritmo com posse curta, mas sofre fisicamente contra times sul-americanos intensos.",
+    "key_factors": "Uruguai conta com força máxima e forte apoio da torcida latina em Miami. Arábia desfalcada de seu principal zagueiro.",
+    "pro_opinion": "Arnaldo Ribeiro espera uma pressão sufocante do Uruguai de Bielsa logo nos primeiros minutos. Tiago Leifert aponta que o Uruguai tem intensidade demais para a Arábia aguentar física e taticamente.",
+    "cheeky_prediction": "0 - 3. O Uruguai de Bielsa não vai tirar o pé do acelerador, empurrado pela torcida latina em Miami.",
+    "home_score": 1,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 35
+    }
+  },
+  {
+    "id": "WC26-04",
+    "date": "2026-06-15 23:30",
+    "home_team": "Irã",
+    "away_team": "Nova Zelândia",
+    "home_emoji": "🇮🇷",
+    "away_emoji": "🇳🇿",
+    "stage": "Fase de Grupos - Grupo G",
+    "venue": "Los Angeles Stadium (Los Angeles, EUA)",
+    "weather": "Clima agradável.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.51,
+      "draw": 0.28,
+      "away": 0.21
+    },
+    "prob_sofascore": {
+      "home": 0.48,
+      "draw": 0.29,
+      "away": 0.23
+    },
+    "odds": {
+      "home": 1.95,
+      "draw": 3.3,
+      "away": 3.9
+    },
+    "tactical_analysis": "Espera-se a partida mais travada e física do dia. O Irã de Carlos Queiroz/escola defensiva se fechará e buscará transições longas para Mehdi Taremi resolver individualmente. A Nova Zelândia usará a força física e jogará no erro adversário, cruzando bolas na área para o pivô de Chris Wood.",
+    "key_factors": "Ambas as seleções chegam completas. O Irã tem mais bagagem internacional e jogadores acostumados com a pressão de Copas do Mundo. A Nova Zelândia joga com forte dedicação física, mas tem sérios problemas de criatividade no meio-campo.",
+    "pro_opinion": "Arnaldo Ribeiro indica que jogos com este perfil de equilíbrio técnico baixo e muita força física tendem a ter pouquíssimos gols na estreia. Tiago Leifert aponta que o Irã é mais time no chão, mas a bola aérea de Chris Wood é um perigo real se a zaga iraniana falhar no posicionamento.",
+    "cheeky_prediction": "1 - 1. A Nova Zelândia é limitada, mas a bola aérea de Wood contra a defesa iraniana pode forçar um empate truncado na estreia.",
+    "home_score": 2,
+    "away_score": 2,
+    "external_ids": {
+      "scorepick": 36
+    }
+  },
+  {
+    "id": "WC26-05",
+    "date": "2026-06-16 13:00",
+    "home_team": "França",
+    "away_team": "Senegal",
+    "home_emoji": "🇫🇷",
+    "away_emoji": "🇸🇳",
+    "stage": "Fase de Grupos - Grupo I",
+    "venue": "MetLife Stadium (East Rutherford, EUA)",
+    "weather": "Noite fresca, vento moderado.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.67,
+      "draw": 0.21,
+      "away": 0.12
+    },
+    "prob_sofascore": {
+      "home": 0.63,
+      "draw": 0.23,
+      "away": 0.14
+    },
+    "odds": {
+      "home": 1.42,
+      "draw": 4.3,
+      "away": 7.5
+    },
+    "tactical_analysis": "A França tem um dos elencos mais letais do mundo, liderado por Kylian Mbappé em velocidade. Senegal é a principal força africana, jogando de forma física e compacta. Se Senegal conseguir segurar a pressão inicial, pode incomodar nos contra-ataques rápidos.",
+    "key_factors": "França com Mbappé confirmado. Senegal desfalcada de um volante titular por suspensão.",
+    "pro_opinion": "Casimiro comenta que Senegal é disparado o melhor time africano, mas a França com Mbappé é imparável se houver espaço para correr. Mauro Cezar avalia que o meio de campo francês ditará o ritmo da vitória segura.",
+    "cheeky_prediction": "2 - 1. Senegal é forte física e defensivamente, conseguirá marcar um gol na bola parada, mas a França vence na individualidade de Mbappé.",
+    "home_score": 3,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 37
+    }
+  },
+  {
+    "id": "WC26-06",
+    "date": "2026-06-16 16:00",
+    "home_team": "Iraque",
+    "away_team": "Noruega",
+    "home_emoji": "🇮🇶",
+    "away_emoji": "🇳🇴",
+    "stage": "Fase de Grupos - Grupo I",
+    "venue": "Gillette Stadium (Foxborough, EUA)",
+    "weather": "Clima ameno de Massachusetts.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.16,
+      "draw": 0.24,
+      "away": 0.6
+    },
+    "prob_sofascore": {
+      "home": 0.18,
+      "draw": 0.25,
+      "away": 0.57
+    },
+    "odds": {
+      "home": 5.5,
+      "draw": 3.75,
+      "away": 1.62
+    },
+    "tactical_analysis": "A Noruega conta com a potência devastadora de Erling Haaland e os passes cirúrgicos de Martin Ødegaard. O Iraque é raçudo e foca em compactar o meio, mas tem sérias dificuldades contra atacantes físicos e de elite.",
+    "key_factors": "Haaland e Ødegaard em excelente forma física. Iraque completo mas taticamente inferior.",
+    "pro_opinion": "Tiago Leifert avisa que Ødegaard flutuando livre vai enfiar três ou quatro bolas limpas para Haaland guardar. Arnaldo Ribeiro ressalta que o Iraque não tem recursos físicos para conter Haaland por 90 minutos.",
+    "cheeky_prediction": "0 - 3. Haaland deve começar sua campanha de artilheiro com pelo menos dois gols diante da frágil defesa iraquiana.",
+    "home_score": 1,
+    "away_score": 4,
+    "external_ids": {
+      "scorepick": 38
+    }
+  },
+  {
+    "id": "WC26-07",
+    "date": "2026-06-16 19:00",
+    "home_team": "Argentina",
+    "away_team": "Argélia",
+    "home_emoji": "🇦🇷",
+    "away_emoji": "🇩🇿",
+    "stage": "Fase de Grupos - Grupo J",
+    "venue": "Arrowhead Stadium (Kansas City, EUA)",
+    "weather": "Clima quente, céu aberto.",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.73,
+      "draw": 0.18,
+      "away": 0.09
+    },
+    "prob_sofascore": {
+      "home": 0.7,
+      "draw": 0.19,
+      "away": 0.11
+    },
+    "odds": {
+      "home": 1.3,
+      "draw": 5.0,
+      "away": 9.5
+    },
+    "tactical_analysis": "Argentina jogará com controle total de posse de bola e Lionel Messi flutuando entre as linhas. A Argélia é taticamente imprevisível, forte individualmente mas instável na defesa contra trocas de passes rápidas.",
+    "key_factors": "Argentina completa e favorita ao título. Argélia aposta em contra-ataques rápidos com Mahrez (se atuar).",
+    "pro_opinion": "Casimiro crê em noite festiva para Lionel Messi distribuindo assistências. Arnaldo Ribeiro aponta que a Argélia tem qualidade individual no ataque, mas peca na recomposição tática contra tabelas curtas.",
+    "cheeky_prediction": "3 - 1. A Argentina domina e goleia, mas a Argélia deve conseguir um gol de honra em jogada individual rápida."
+  },
+  {
+    "id": "WC26-08",
+    "date": "2026-06-16 22:00",
+    "home_team": "Áustria",
+    "away_team": "Jordânia",
+    "home_emoji": "🇦🇹",
+    "away_emoji": "🇯🇴",
+    "stage": "Fase de Grupos - Grupo J",
+    "venue": "Levi's Stadium (Santa Clara, EUA)",
+    "weather": "Clima fresco da Califórnia.",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.6,
+      "draw": 0.25,
+      "away": 0.15
+    },
+    "prob_sofascore": {
+      "home": 0.57,
+      "draw": 0.27,
+      "away": 0.16
+    },
+    "odds": {
+      "home": 1.6,
+      "draw": 3.7,
+      "away": 5.75
+    },
+    "tactical_analysis": "A Áustria sob o comando do estilo de 'Gegenpressing' de Ralf Rangnick vai sufocar a saída de bola da Jordânia. A Jordânia, surpresa asiática, joga recuada e explora a velocidade, mas terá imensa dificuldade para respirar contra a pressão austríaca.",
+    "key_factors": "Áustria com style físico e intenso muito bem assimilado. Jordânia sem desfalques mas limitada tecnicamente.",
+    "pro_opinion": "Mauro Cezar analisa que a pressão pós-perda da Áustria de Ralf Rangnick vai asfixiar a Jordânia. Tiago Leifert elogia a velocidade da Jordânia nos contra-ataques, mas acha imprevisível resistirem à intensidade austríaca.",
+    "cheeky_prediction": "2 - 0. A Áustria ganha sem sustos, forçando erros na saída de bola jordaniana desde o início.",
+    "home_score": 3,
+    "away_score": 1,
+    "external_ids": {
+      "scorepick": 40
+    }
+  },
+  {
+    "id": "WC26-09",
+    "date": "2026-06-17 11:00",
+    "home_team": "Portugal",
+    "away_team": "RD Congo",
+    "home_emoji": "🇵🇹",
+    "away_emoji": "🇨🇩",
+    "stage": "Fase de Grupos - Grupo K",
+    "venue": "NRG Stadium (Houston, EUA)",
+    "weather": "Clima quente e úmido de Houston.",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.71,
+      "draw": 0.19,
+      "away": 0.1
+    },
+    "prob_sofascore": {
+      "home": 0.68,
+      "draw": 0.2,
+      "away": 0.12
+    },
+    "odds": {
+      "home": 1.35,
+      "draw": 4.6,
+      "away": 8.0
+    },
+    "tactical_analysis": "Portugal tem um ataque avassalador com Bruno Fernandes, Rafael Leão e Cristiano Ronaldo. A RD Congo tenta compensar a disparidade técnica com imposição física e transições aéreas, mas concede muitos espaços entre as linhas defensivas.",
+    "key_factors": "Portugal completo e muito entrosado. RD Congo joga no limite físico.",
+    "pro_opinion": "Casimiro destaca a abundância de talento em Portugal, sugerindo placar elástico caso Bruno Fernandes esteja inspirado. Arnaldo Ribeiro aponta a RD Congo como fisicamente muito forte, mas indisciplinada taticamente.",
+    "cheeky_prediction": "4 - 1. Portugal passeia com gols de Cristiano Ronaldo e Rafael Leão explorando as costas da zaga congolesa.",
+    "external_ids": {
+      "scorepick": 41
+    }
+  },
+  {
+    "id": "WC26-10",
+    "date": "2026-06-17 14:00",
+    "home_team": "Inglaterra",
+    "away_team": "Croácia",
+    "home_emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "away_emoji": "🇭🇷",
+    "stage": "Fase de Grupos - Grupo K",
+    "venue": "AT&T Stadium (Arlington, EUA)",
+    "weather": "Clima ameno, estádio fechado.",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.49,
+      "draw": 0.28,
+      "away": 0.23
+    },
+    "prob_sofascore": {
+      "home": 0.46,
+      "draw": 0.29,
+      "away": 0.25
+    },
+    "odds": {
+      "home": 1.95,
+      "draw": 3.35,
+      "away": 3.75
+    },
+    "tactical_analysis": "O confronto mais equilibrado da rodada. A Inglaterra aposta na criatividade de Jude Bellingham e na finalização cirúrgica de Harry Kane. A Croácia, comandada pelo lendário Luka Modric, dita o ritmo cadenciado do jogo com seu meio-campo técnico, tentando esfriar a partida.",
+    "key_factors": "Inglaterra com Bellingham e Kane em alta. Croácia com zaga sólida liderada por Gvardiol, Modric faz sua última Copa.",
+    "pro_opinion": "Tiago Leifert prevê um jogo de xadrez, onde Modric tentará acalmar a partida para anular a velocidade de Bellingham e Foden. Arnaldo Ribeiro acredita que a Inglaterra é favorita física, mas a Croácia é mestre em levar jogos equilibrados em Copas.",
+    "cheeky_prediction": "1 - 1. Jogo muito estudado e cadenciado no meio-campo. A Croácia é especialista em estreias duras e segura o empate.",
+    "external_ids": {
+      "scorepick": 42
+    }
+  },
+  {
+    "id": "SP-39",
+    "date": "2026-06-16 22:00",
+    "home_team": "Argentina",
+    "away_team": "Algélia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 1",
+    "venue": "",
+    "weather": "",
+    "status": "FINISHED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 39
+    },
+    "home_score": 3,
+    "away_score": 0
+  },
+  {
+    "id": "SP-43",
+    "date": "2026-06-17 20:00",
+    "home_team": "Gana",
+    "away_team": "Panamá",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 1",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 43
+    }
+  },
+  {
+    "id": "SP-44",
+    "date": "2026-06-17 23:00",
+    "home_team": "Uzbequistão",
+    "away_team": "Colômbia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 1",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 44
+    }
+  },
+  {
+    "id": "SP-45",
+    "date": "2026-06-18 13:00",
+    "home_team": "República Tcheca",
+    "away_team": "África do Sul",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 45
+    }
+  },
+  {
+    "id": "SP-46",
+    "date": "2026-06-18 16:00",
+    "home_team": "Suíça",
+    "away_team": "Bósnia-Herzegovina",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 46
+    }
+  },
+  {
+    "id": "SP-47",
+    "date": "2026-06-18 19:00",
+    "home_team": "Canadá",
+    "away_team": "Catar",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 47
+    }
+  },
+  {
+    "id": "SP-48",
+    "date": "2026-06-18 22:00",
+    "home_team": "México",
+    "away_team": "Coreia do Sul",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 48
+    }
+  },
+  {
+    "id": "SP-49",
+    "date": "2026-06-19 16:00",
+    "home_team": "Estados Unidos",
+    "away_team": "Austrália",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 49
+    }
+  },
+  {
+    "id": "SP-50",
+    "date": "2026-06-19 19:00",
+    "home_team": "Escócia",
+    "away_team": "Marrocos",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 50
+    }
+  },
+  {
+    "id": "SP-51",
+    "date": "2026-06-19 21:30",
+    "home_team": "Brasil",
+    "away_team": "Haiti",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 51
+    }
+  },
+  {
+    "id": "SP-52",
+    "date": "2026-06-20 00:00",
+    "home_team": "Turquia",
+    "away_team": "Paraguai",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 52
+    }
+  },
+  {
+    "id": "SP-53",
+    "date": "2026-06-20 14:00",
+    "home_team": "Holanda",
+    "away_team": "Suécia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 53
+    }
+  },
+  {
+    "id": "SP-54",
+    "date": "2026-06-20 17:00",
+    "home_team": "Alemanha",
+    "away_team": "Costa do Marfim",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 54
+    }
+  },
+  {
+    "id": "SP-55",
+    "date": "2026-06-20 21:00",
+    "home_team": "Equador",
+    "away_team": "Curaçao",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 55
+    }
+  },
+  {
+    "id": "SP-56",
+    "date": "2026-06-21 01:00",
+    "home_team": "Tunísia",
+    "away_team": "Japão",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 56
+    }
+  },
+  {
+    "id": "SP-57",
+    "date": "2026-06-21 13:00",
+    "home_team": "Espanha",
+    "away_team": "Arábia Saudita",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 57
+    }
+  },
+  {
+    "id": "SP-58",
+    "date": "2026-06-21 16:00",
+    "home_team": "Bélgica",
+    "away_team": "Irã",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 58
+    }
+  },
+  {
+    "id": "SP-59",
+    "date": "2026-06-21 19:00",
+    "home_team": "Uruguai",
+    "away_team": "Cabo Verde",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 59
+    }
+  },
+  {
+    "id": "SP-60",
+    "date": "2026-06-21 22:00",
+    "home_team": "Nova Zelândia",
+    "away_team": "Egito",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 60
+    }
+  },
+  {
+    "id": "SP-61",
+    "date": "2026-06-22 14:00",
+    "home_team": "Argentina",
+    "away_team": "Áustria",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 61
+    }
+  },
+  {
+    "id": "SP-62",
+    "date": "2026-06-22 18:00",
+    "home_team": "França",
+    "away_team": "Iraque",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 62
+    }
+  },
+  {
+    "id": "SP-63",
+    "date": "2026-06-22 21:00",
+    "home_team": "Noruega",
+    "away_team": "Senegal",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 63
+    }
+  },
+  {
+    "id": "SP-64",
+    "date": "2026-06-23 00:00",
+    "home_team": "Jordânia",
+    "away_team": "Algélia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 64
+    }
+  },
+  {
+    "id": "SP-65",
+    "date": "2026-06-23 14:00",
+    "home_team": "Portugal",
+    "away_team": "Uzbequistão",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 65
+    }
+  },
+  {
+    "id": "SP-66",
+    "date": "2026-06-23 17:00",
+    "home_team": "Inglaterra",
+    "away_team": "Gana",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 66
+    }
+  },
+  {
+    "id": "SP-67",
+    "date": "2026-06-23 20:00",
+    "home_team": "Panamá",
+    "away_team": "Croácia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 67
+    }
+  },
+  {
+    "id": "SP-68",
+    "date": "2026-06-23 23:00",
+    "home_team": "Colômbia",
+    "away_team": "RD Congo",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 2",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 68
+    }
+  },
+  {
+    "id": "SP-69",
+    "date": "2026-06-24 16:00",
+    "home_team": "Suíça",
+    "away_team": "Canadá",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 69
+    }
+  },
+  {
+    "id": "SP-70",
+    "date": "2026-06-24 16:00",
+    "home_team": "Bósnia-Herzegovina",
+    "away_team": "Catar",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 70
+    }
+  },
+  {
+    "id": "SP-71",
+    "date": "2026-06-24 19:00",
+    "home_team": "Marrocos",
+    "away_team": "Haiti",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 71
+    }
+  },
+  {
+    "id": "SP-72",
+    "date": "2026-06-24 19:00",
+    "home_team": "Escócia",
+    "away_team": "Brasil",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 72
+    }
+  },
+  {
+    "id": "SP-74",
+    "date": "2026-06-24 22:00",
+    "home_team": "África do Sul",
+    "away_team": "Coreia do Sul",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 74
+    }
+  },
+  {
+    "id": "SP-73",
+    "date": "2026-06-24 22:00",
+    "home_team": "República Tcheca",
+    "away_team": "México",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 73
+    }
+  },
+  {
+    "id": "SP-75",
+    "date": "2026-06-25 17:00",
+    "home_team": "Equador",
+    "away_team": "Alemanha",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 75
+    }
+  },
+  {
+    "id": "SP-76",
+    "date": "2026-06-25 17:00",
+    "home_team": "Curaçao",
+    "away_team": "Costa do Marfim",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 76
+    }
+  },
+  {
+    "id": "SP-78",
+    "date": "2026-06-25 20:00",
+    "home_team": "Japão",
+    "away_team": "Suécia",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 78
+    }
+  },
+  {
+    "id": "SP-77",
+    "date": "2026-06-25 20:00",
+    "home_team": "Tunísia",
+    "away_team": "Holanda",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 77
+    }
+  },
+  {
+    "id": "SP-80",
+    "date": "2026-06-25 23:00",
+    "home_team": "Paraguai",
+    "away_team": "Austrália",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 80
+    }
+  },
+  {
+    "id": "SP-79",
+    "date": "2026-06-25 23:00",
+    "home_team": "Turquia",
+    "away_team": "Estados Unidos",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 79
+    }
+  },
+  {
+    "id": "SP-81",
+    "date": "2026-06-26 16:00",
+    "home_team": "Noruega",
+    "away_team": "França",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 81
+    }
+  },
+  {
+    "id": "SP-82",
+    "date": "2026-06-26 16:00",
+    "home_team": "Senegal",
+    "away_team": "Iraque",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 82
+    }
+  },
+  {
+    "id": "SP-83",
+    "date": "2026-06-26 21:00",
+    "home_team": "Uruguai",
+    "away_team": "Espanha",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 83
+    }
+  },
+  {
+    "id": "SP-84",
+    "date": "2026-06-26 21:00",
+    "home_team": "Cabo Verde",
+    "away_team": "Arábia Saudita",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 84
+    }
+  },
+  {
+    "id": "SP-85",
+    "date": "2026-06-27 00:00",
+    "home_team": "Nova Zelândia",
+    "away_team": "Bélgica",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 85
+    }
+  },
+  {
+    "id": "SP-86",
+    "date": "2026-06-27 00:00",
+    "home_team": "Egito",
+    "away_team": "Irã",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 86
+    }
+  },
+  {
+    "id": "SP-87",
+    "date": "2026-06-27 18:00",
+    "home_team": "Panamá",
+    "away_team": "Inglaterra",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 87
+    }
+  },
+  {
+    "id": "SP-88",
+    "date": "2026-06-27 18:00",
+    "home_team": "Croácia",
+    "away_team": "Gana",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 88
+    }
+  },
+  {
+    "id": "SP-90",
+    "date": "2026-06-27 20:30",
+    "home_team": "RD Congo",
+    "away_team": "Uzbequistão",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 90
+    }
+  },
+  {
+    "id": "SP-89",
+    "date": "2026-06-27 20:30",
+    "home_team": "Colômbia",
+    "away_team": "Portugal",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 89
+    }
+  },
+  {
+    "id": "SP-91",
+    "date": "2026-06-27 23:00",
+    "home_team": "Jordânia",
+    "away_team": "Argentina",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 91
+    }
+  },
+  {
+    "id": "SP-92",
+    "date": "2026-06-27 23:00",
+    "home_team": "Algélia",
+    "away_team": "Áustria",
+    "home_emoji": "",
+    "away_emoji": "",
+    "stage": "Round 3",
+    "venue": "",
+    "weather": "",
+    "status": "SCHEDULED",
+    "prob_opta": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_sofascore": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "odds": {
+      "home": 3.0,
+      "draw": 3.0,
+      "away": 2.99
+    },
+    "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
+    "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
+    "pro_opinion": "",
+    "cheeky_prediction": "",
+    "external_ids": {
+      "scorepick": 92
+    }
+  }
+]
