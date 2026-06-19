@@ -23,7 +23,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Atlanta Stadium (Atlanta, EUA)",
         "weather": "Calor intenso, umidade moderada.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.80, "draw": 0.14, "away": 0.06},
+        "prob_google": {"home": 0.80, "draw": 0.14, "away": 0.06},
+        "prob_forebet": {"home": 0.80, "draw": 0.14, "away": 0.06},
         "prob_sofascore": {"home": 0.76, "draw": 0.16, "away": 0.08},
         "odds": {"home": 1.22, "draw": 5.80, "away": 13.00},
         "tactical_analysis": (
@@ -50,7 +51,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "BC Place (Vancouver, Canadá)",
         "weather": "Temperatura agradável (estádio fechado/teto retrátil).",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.58, "draw": 0.24, "away": 0.18},
+        "prob_google": {"home": 0.58, "draw": 0.24, "away": 0.18},
+        "prob_forebet": {"home": 0.58, "draw": 0.24, "away": 0.18},
         "prob_sofascore": {"home": 0.54, "draw": 0.26, "away": 0.20},
         "odds": {"home": 1.70, "draw": 3.65, "away": 4.80},
         "tactical_analysis": (
@@ -76,7 +78,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Miami Stadium (Miami, EUA)",
         "weather": "Clima abafado típico da Flórida.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.12, "draw": 0.22, "away": 0.66},
+        "prob_google": {"home": 0.12, "draw": 0.22, "away": 0.66},
+        "prob_forebet": {"home": 0.12, "draw": 0.22, "away": 0.66},
         "prob_sofascore": {"home": 0.14, "draw": 0.24, "away": 0.62},
         "odds": {"home": 7.00, "draw": 4.20, "away": 1.45},
         "tactical_analysis": (
@@ -102,7 +105,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Los Angeles Stadium (Los Angeles, EUA)",
         "weather": "Clima agradável.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.51, "draw": 0.28, "away": 0.21},
+        "prob_google": {"home": 0.51, "draw": 0.28, "away": 0.21},
+        "prob_forebet": {"home": 0.51, "draw": 0.28, "away": 0.21},
         "prob_sofascore": {"home": 0.48, "draw": 0.29, "away": 0.23},
         "odds": {"home": 1.95, "draw": 3.30, "away": 3.90},
         "tactical_analysis": (
@@ -129,7 +133,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "MetLife Stadium (East Rutherford, EUA)",
         "weather": "Noite fresca, vento moderado.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.67, "draw": 0.21, "away": 0.12},
+        "prob_google": {"home": 0.67, "draw": 0.21, "away": 0.12},
+        "prob_forebet": {"home": 0.67, "draw": 0.21, "away": 0.12},
         "prob_sofascore": {"home": 0.63, "draw": 0.23, "away": 0.14},
         "odds": {"home": 1.42, "draw": 4.30, "away": 7.50},
         "tactical_analysis": (
@@ -155,7 +160,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Gillette Stadium (Foxborough, EUA)",
         "weather": "Clima ameno de Massachusetts.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.16, "draw": 0.24, "away": 0.60},
+        "prob_google": {"home": 0.16, "draw": 0.24, "away": 0.60},
+        "prob_forebet": {"home": 0.16, "draw": 0.24, "away": 0.60},
         "prob_sofascore": {"home": 0.18, "draw": 0.25, "away": 0.57},
         "odds": {"home": 5.50, "draw": 3.75, "away": 1.62},
         "tactical_analysis": (
@@ -180,7 +186,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Arrowhead Stadium (Kansas City, EUA)",
         "weather": "Clima quente, céu aberto.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.73, "draw": 0.18, "away": 0.09},
+        "prob_google": {"home": 0.73, "draw": 0.18, "away": 0.09},
+        "prob_forebet": {"home": 0.73, "draw": 0.18, "away": 0.09},
         "prob_sofascore": {"home": 0.70, "draw": 0.19, "away": 0.11},
         "odds": {"home": 1.30, "draw": 5.00, "away": 9.50},
         "tactical_analysis": (
@@ -205,7 +212,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "Levi's Stadium (Santa Clara, EUA)",
         "weather": "Clima fresco da Califórnia.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.60, "draw": 0.25, "away": 0.15},
+        "prob_google": {"home": 0.60, "draw": 0.25, "away": 0.15},
+        "prob_forebet": {"home": 0.60, "draw": 0.25, "away": 0.15},
         "prob_sofascore": {"home": 0.57, "draw": 0.27, "away": 0.16},
         "odds": {"home": 1.60, "draw": 3.70, "away": 5.75},
         "tactical_analysis": (
@@ -231,7 +239,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "NRG Stadium (Houston, EUA)",
         "weather": "Clima quente e úmido de Houston.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.71, "draw": 0.19, "away": 0.10},
+        "prob_google": {"home": 0.71, "draw": 0.19, "away": 0.10},
+        "prob_forebet": {"home": 0.71, "draw": 0.19, "away": 0.10},
         "prob_sofascore": {"home": 0.68, "draw": 0.20, "away": 0.12},
         "odds": {"home": 1.35, "draw": 4.60, "away": 8.00},
         "tactical_analysis": (
@@ -257,7 +266,8 @@ DEFAULT_WORLD_CUP_MATCHES = [
         "venue": "AT&T Stadium (Arlington, EUA)",
         "weather": "Clima ameno, estádio fechado.",
         "status": "SCHEDULED",
-        "prob_opta": {"home": 0.49, "draw": 0.28, "away": 0.23},
+        "prob_google": {"home": 0.49, "draw": 0.28, "away": 0.23},
+        "prob_forebet": {"home": 0.49, "draw": 0.28, "away": 0.23},
         "prob_sofascore": {"home": 0.46, "draw": 0.29, "away": 0.25},
         "odds": {"home": 1.95, "draw": 3.35, "away": 3.75},
         "tactical_analysis": (
@@ -339,7 +349,8 @@ def calculate_expected_points(guess_h, guess_a, score_probs):
 def load_settings():
     if not os.path.exists(SETTINGS_PATH):
         default = {
-            "weight_opta": 0.30, 
+            "weight_google": 0.15,
+            "weight_forebet": 0.15, 
             "weight_sofascore": 0.30, 
             "weight_odds": 0.40, 
             "odds_api_key": "",
@@ -510,10 +521,11 @@ def get_prediction_from_ratings(home, away):
     return h_prob / s, d_prob / s, a_prob / s
 
 def compute_predictions(match, settings):
-    opta = match.get("prob_opta", {"home": 0.333, "draw": 0.333, "away": 0.334})
+    google = match.get("prob_google", {"home": 0.333, "draw": 0.333, "away": 0.334})
+    forebet = match.get("prob_forebet", {"home": 0.333, "draw": 0.333, "away": 0.334})
     sofa = match.get("prob_sofascore", {"home": 0.333, "draw": 0.333, "away": 0.334})
     
-    is_opta_fallback = abs(opta.get("home", 0.333) - 0.333) < 0.01
+    is_google_fallback = abs(google.get("home", 0.333) - 0.333) < 0.01
     is_sofa_fallback = abs(sofa.get("home", 0.333) - 0.333) < 0.01
     
     pele_prob = get_pele_prob(match["home_team"], match["away_team"])
@@ -525,23 +537,25 @@ def compute_predictions(match, settings):
     w_fifa_tm = 0.25
     w_odds = 0.40
     
-    if not is_opta_fallback and not is_sofa_fallback:
+    if not is_google_fallback and not is_sofa_fallback:
         w_pele = 0.30
         w_fifa_tm = 0.20
         w_odds = 0.30
-        w_opta = float(settings.get("weight_opta", 0.12))
+        w_google = float(settings.get("weight_google", 0.06))
+        w_forebet = float(settings.get("weight_forebet", 0.06))
         w_sofa = float(settings.get("weight_sofascore", 0.08))
         
-        sum_w = w_pele + w_fifa_tm + w_odds + w_opta + w_sofa
+        sum_w = w_pele + w_fifa_tm + w_odds + w_google + w_forebet + w_sofa
         w_pele /= sum_w
         w_fifa_tm /= sum_w
         w_odds /= sum_w
-        w_opta /= sum_w
+        w_google /= sum_w
+        w_forebet /= sum_w
         w_sofa /= sum_w
         
-        consensus_h = pele_prob["home"] * w_pele + fifa_tm_prob["home"] * w_fifa_tm + odds_prob["home"] * w_odds + opta["home"] * w_opta + sofa["home"] * w_sofa
-        consensus_d = pele_prob["draw"] * w_pele + fifa_tm_prob["draw"] * w_fifa_tm + odds_prob["draw"] * w_odds + opta["draw"] * w_opta + sofa["draw"] * w_sofa
-        consensus_a = pele_prob["away"] * w_pele + fifa_tm_prob["away"] * w_fifa_tm + odds_prob["away"] * w_odds + opta["away"] * w_opta + sofa["away"] * w_sofa
+        consensus_h = pele_prob["home"] * w_pele + fifa_tm_prob["home"] * w_fifa_tm + odds_prob["home"] * w_odds + google["home"] * w_google + forebet["home"] * w_forebet + sofa["home"] * w_sofa
+        consensus_d = pele_prob["draw"] * w_pele + fifa_tm_prob["draw"] * w_fifa_tm + odds_prob["draw"] * w_odds + google["draw"] * w_google + forebet["draw"] * w_forebet + sofa["draw"] * w_sofa
+        consensus_a = pele_prob["away"] * w_pele + fifa_tm_prob["away"] * w_fifa_tm + odds_prob["away"] * w_odds + google["away"] * w_google + forebet["away"] * w_forebet + sofa["away"] * w_sofa
     else:
         consensus_h = pele_prob["home"] * w_pele + fifa_tm_prob["home"] * w_fifa_tm + odds_prob["home"] * w_odds
         consensus_d = pele_prob["draw"] * w_pele + fifa_tm_prob["draw"] * w_fifa_tm + odds_prob["draw"] * w_odds
@@ -554,9 +568,36 @@ def compute_predictions(match, settings):
     
     # Expectativa de gols de Poisson
     total_goals = get_calibrated_total_goals()
+    
+    # Adjust total goals based on Over/Under 2.5 odds
+    if "over_25" in match.get("odds", {}):
+        odd_o25 = float(match["odds"]["over_25"])
+        odd_u25 = float(match["odds"]["under_25"])
+        if odd_o25 > 0 and odd_u25 > 0:
+            prob_o25 = (1.0 / odd_o25) / ((1.0 / odd_o25) + (1.0 / odd_u25))
+            adjustment_o25 = (prob_o25 - 0.5) * 2.0
+            total_goals += adjustment_o25
+            total_goals = max(0.5, total_goals)
+            
     home_share = consensus_h + 0.5 * consensus_d
     lambda_h = total_goals * home_share
     lambda_a = total_goals * (1.0 - home_share)
+    
+    # Adjust BTTS based on BTTS odds
+    if "btts_yes" in match.get("odds", {}):
+        odd_btts_yes = float(match["odds"]["btts_yes"])
+        odd_btts_no = float(match["odds"]["btts_no"])
+        if odd_btts_yes > 0 and odd_btts_no > 0:
+            prob_btts_yes = (1.0 / odd_btts_yes) / ((1.0 / odd_btts_yes) + (1.0 / odd_btts_no))
+            if prob_btts_yes > 0.5:
+                diff = abs(lambda_h - lambda_a)
+                shift = diff * (prob_btts_yes - 0.5) * 0.5
+                if lambda_h > lambda_a:
+                    lambda_h -= shift
+                    lambda_a += shift
+                else:
+                    lambda_h += shift
+                    lambda_a -= shift
     
     # Probabilidade crua de gols
     score_probs = calculate_score_probs(lambda_h, lambda_a)
@@ -625,9 +666,11 @@ def update_csv_with_scores(scores, settings=None):
         
     headers = [
         "match_id", "date", "home_team", "away_team", "stage", "venue", "status",
-        "home_score", "away_score", "prob_opta_home", "prob_opta_draw", "prob_opta_away",
+        "home_score", "away_score", "prob_google_home", "prob_google_draw", "prob_google_away",
+        "prob_forebet_home", "prob_forebet_draw", "prob_forebet_away",
         "prob_sofascore_home", "prob_sofascore_draw", "prob_sofascore_away",
         "odds_home", "odds_draw", "odds_away",
+        "odds_over_25", "odds_under_25", "odds_btts_yes", "odds_btts_no",
         "consensus_home", "consensus_draw", "consensus_away",
         "suggested_score", "expected_points", "tactical_summary",
         "home_emoji", "away_emoji", "weather", "pro_opinion", "cheeky_prediction"
@@ -660,15 +703,22 @@ def update_csv_with_scores(scores, settings=None):
             "status": status,
             "home_score": h_score,
             "away_score": a_score,
-            "prob_opta_home": f"{match['prob_opta']['home']:.2f}",
-            "prob_opta_draw": f"{match['prob_opta']['draw']:.2f}",
-            "prob_opta_away": f"{match['prob_opta']['away']:.2f}",
+            "prob_google_home": f"{match['prob_google']['home']:.2f}",
+            "prob_google_draw": f"{match['prob_google']['draw']:.2f}",
+            "prob_google_away": f"{match['prob_google']['away']:.2f}",
+            "prob_forebet_home": f"{match['prob_forebet']['home']:.2f}",
+            "prob_forebet_draw": f"{match['prob_forebet']['draw']:.2f}",
+            "prob_forebet_away": f"{match['prob_forebet']['away']:.2f}",
             "prob_sofascore_home": f"{match['prob_sofascore']['home']:.2f}",
             "prob_sofascore_draw": f"{match['prob_sofascore']['draw']:.2f}",
             "prob_sofascore_away": f"{match['prob_sofascore']['away']:.2f}",
             "odds_home": f"{match['odds']['home']:.2f}",
             "odds_draw": f"{match['odds']['draw']:.2f}",
             "odds_away": f"{match['odds']['away']:.2f}",
+            "odds_over_25": f"{match.get('odds', {}).get('over_25', 0.0):.2f}",
+            "odds_under_25": f"{match.get('odds', {}).get('under_25', 0.0):.2f}",
+            "odds_btts_yes": f"{match.get('odds', {}).get('btts_yes', 0.0):.2f}",
+            "odds_btts_no": f"{match.get('odds', {}).get('btts_no', 0.0):.2f}",
             "consensus_home": f"{pred['consensus'][0]:.2f}",
             "consensus_draw": f"{pred['consensus'][1]:.2f}",
             "consensus_away": f"{pred['consensus'][2]:.2f}",
@@ -728,7 +778,8 @@ def tune_weights():
     print(f"Analisando {len(finished_games)} partida(s) finalizada(s) para calibração...")
     
     # Calculate average Brier Score for each source
-    brier_opta = 0.0
+    brier_google = 0.0
+    brier_forebet = 0.0
     brier_sofa = 0.0
     brier_odds = 0.0
     
@@ -736,41 +787,49 @@ def tune_weights():
         m = game["match"]
         out = game["outcome"]
         
-        # Opta
-        brier_opta += get_brier_score(m["prob_opta"]["home"], m["prob_opta"]["draw"], m["prob_opta"]["away"], out)
+        # Google
+        brier_google += get_brier_score(m["prob_google"]["home"], m["prob_google"]["draw"], m["prob_google"]["away"], out)
+        # Forebet
+        brier_forebet += get_brier_score(m["prob_forebet"]["home"], m["prob_forebet"]["draw"], m["prob_forebet"]["away"], out)
         # Sofascore
         brier_sofa += get_brier_score(m["prob_sofascore"]["home"], m["prob_sofascore"]["draw"], m["prob_sofascore"]["away"], out)
         # Odds
         odds_p = get_odds_prob(m["odds"])
         brier_odds += get_brier_score(odds_p["home"], odds_p["draw"], odds_p["away"], out)
         
-    avg_b_opta = brier_opta / len(finished_games)
+    avg_b_google = brier_google / len(finished_games)
+    avg_b_forebet = brier_forebet / len(finished_games)
     avg_b_sofa = brier_sofa / len(finished_games)
     avg_b_odds = brier_odds / len(finished_games)
     
     print(f"Brier Scores Médios (Menor é melhor):")
-    print(f"  - Opta: {avg_b_opta:.4f}")
+    print(f"  - Google: {avg_b_google:.4f}")
+    print(f"  - Forebet: {avg_b_forebet:.4f}")
     print(f"  - Sofascore: {avg_b_sofa:.4f}")
     print(f"  - Odds de Mercado: {avg_b_odds:.4f}")
     
     # Compute accuracy scores (2.0 - BrierScore, where 2.0 is worst and 0.0 is perfect)
-    acc_opta = max(0.01, 2.0 - avg_b_opta)
+    acc_google = max(0.01, 2.0 - avg_b_google)
+    acc_forebet = max(0.01, 2.0 - avg_b_forebet)
     acc_sofa = max(0.01, 2.0 - avg_b_sofa)
     acc_odds = max(0.01, 2.0 - avg_b_odds)
     
     # Calculate new normalized weights
-    sum_acc = acc_opta + acc_sofa + acc_odds
-    new_w_opta = acc_opta / sum_acc
+    sum_acc = acc_google + acc_forebet + acc_sofa + acc_odds
+    new_w_google = acc_google / sum_acc
+    new_w_forebet = acc_forebet / sum_acc
     new_w_sofa = acc_sofa / sum_acc
     new_w_odds = acc_odds / sum_acc
     
     print("\nNovos pesos sugeridos (proporcionais à acurácia do torneio):")
-    print(f"  - Peso Opta: {new_w_opta:.2%}")
+    print(f"  - Peso Google: {new_w_google:.2%}")
+    print(f"  - Peso Forebet: {new_w_forebet:.2%}")
     print(f"  - Peso Sofascore: {new_w_sofa:.2%}")
     print(f"  - Peso Odds: {new_w_odds:.2%}")
     
     settings = load_settings()
-    settings["weight_opta"] = new_w_opta
+    settings["weight_google"] = new_w_google
+    settings["weight_forebet"] = new_w_forebet
     settings["weight_sofascore"] = new_w_sofa
     settings["weight_odds"] = new_w_odds
     save_settings(settings)
@@ -782,7 +841,7 @@ def print_markdown_report(date_str=None):
     
     print("\n# 🏆 COPA DO MUNDO 2026 - CENTRO DE PREVISÕES TÁTICAS")
     print(f"**Data local:** {datetime.now().strftime('%d/%m/%Y %H:%M')}  ")
-    print(f"**Pesos do Modelo:** Opta ({settings.get('weight_opta'):.0%}) | Sofascore ({settings.get('weight_sofascore'):.0%}) | Odds ({settings.get('weight_odds'):.0%})")
+    print(f"**Pesos do Modelo:** Google ({settings.get('weight_google', 0):.0%}) | Forebet ({settings.get('weight_forebet', 0):.0%}) | Sofascore ({settings.get('weight_sofascore'):.0%}) | Odds ({settings.get('weight_odds'):.0%})")
     print()
     print("---")
     
@@ -1272,7 +1331,8 @@ def fetch_scorepick_data():
             "venue": sm["venue"]["name"] if sm.get("venue") else "",
             "weather": "",
             "status": sm["status"].upper(),
-            "prob_opta": {"home": h_prob, "draw": d_prob, "away": a_prob},
+            "prob_google": {"home": h_prob, "draw": d_prob, "away": a_prob},
+            "prob_forebet": {"home": h_prob, "draw": d_prob, "away": a_prob},
             "prob_sofascore": {"home": h_prob, "draw": d_prob, "away": a_prob},
             "odds": {"home": round(1.0/max(0.01, h_prob), 2), "draw": round(1.0/max(0.01, d_prob), 2), "away": round(1.0/max(0.01, a_prob), 2)},
             "tactical_analysis": f"Previsão baseada nas probabilidades oficiais da ScorePick ({home_pct:.0f}% / {draw_pct:.0f}% / {away_pct:.0f}%).",
@@ -1415,7 +1475,8 @@ if __name__ == "__main__":
         # Carrega pesos antigos para comparação
         old_settings = load_settings()
         old_weights = {
-            "opta": old_settings.get("weight_opta", 0.33),
+            "google": old_settings.get("weight_google", 0.16),
+            "forebet": old_settings.get("weight_forebet", 0.16),
             "sofascore": old_settings.get("weight_sofascore", 0.33),
             "odds": old_settings.get("weight_odds", 0.34)
         }
@@ -1436,7 +1497,8 @@ if __name__ == "__main__":
         update_csv_with_scores(scores, new_settings)
         
         print(f"\n✔ Pesos atualizados no settings.json:")
-        print(f"  - Peso Opta:      {old_weights['opta']:.0%} -> {new_settings.get('weight_opta'):.0%}")
+        print(f"  - Peso Google:    {old_weights['google']:.0%} -> {new_settings.get('weight_google'):.0%}")
+        print(f"  - Peso Forebet:   {old_weights['forebet']:.0%} -> {new_settings.get('weight_forebet'):.0%}")
         print(f"  - Peso Sofascore: {old_weights['sofascore']:.0%} -> {new_settings.get('weight_sofascore'):.0%}")
         print(f"  - Peso Odds:      {old_weights['odds']:.0%} -> {new_settings.get('weight_odds'):.0%}")
         print("✔ Todas as previsões futuras foram recalculadas com os novos pesos e atualizadas no CSV!")

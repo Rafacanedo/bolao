@@ -10,11 +10,6 @@
     "venue": "Mexico City Stadium (Cidade do México, México)",
     "weather": "Clima ensolarado de altitude.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.55,
-      "draw": 0.25,
-      "away": 0.2
-    },
     "prob_sofascore": {
       "home": 0.52,
       "draw": 0.27,
@@ -33,6 +28,16 @@
     "away_score": 0,
     "external_ids": {
       "scorepick": 21
+    },
+    "prob_google": {
+      "home": 0.55,
+      "draw": 0.25,
+      "away": 0.2
+    },
+    "prob_forebet": {
+      "home": 0.55,
+      "draw": 0.25,
+      "away": 0.2
     }
   },
   {
@@ -46,11 +51,6 @@
     "venue": "Guadalajara Stadium (Guadalajara, México)",
     "weather": "Clima ameno.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.4,
-      "draw": 0.3,
-      "away": 0.3
-    },
     "prob_sofascore": {
       "home": 0.38,
       "draw": 0.31,
@@ -69,6 +69,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 22
+    },
+    "prob_google": {
+      "home": 0.4,
+      "draw": 0.3,
+      "away": 0.3
+    },
+    "prob_forebet": {
+      "home": 0.4,
+      "draw": 0.3,
+      "away": 0.3
     }
   },
   {
@@ -82,11 +92,6 @@
     "venue": "Toronto Stadium (Toronto, Canadá)",
     "weather": "Clima temperado agradável.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.45,
-      "draw": 0.28,
-      "away": 0.27
-    },
     "prob_sofascore": {
       "home": 0.42,
       "draw": 0.29,
@@ -105,6 +110,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 23
+    },
+    "prob_google": {
+      "home": 0.45,
+      "draw": 0.28,
+      "away": 0.27
+    },
+    "prob_forebet": {
+      "home": 0.45,
+      "draw": 0.28,
+      "away": 0.27
     }
   },
   {
@@ -118,11 +133,6 @@
     "venue": "Los Angeles Stadium (Los Angeles, EUA)",
     "weather": "Céu limpo, clima seco.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.6,
-      "draw": 0.24,
-      "away": 0.16
-    },
     "prob_sofascore": {
       "home": 0.58,
       "draw": 0.25,
@@ -141,6 +151,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 24
+    },
+    "prob_google": {
+      "home": 0.6,
+      "draw": 0.24,
+      "away": 0.16
+    },
+    "prob_forebet": {
+      "home": 0.6,
+      "draw": 0.24,
+      "away": 0.16
     }
   },
   {
@@ -154,11 +174,6 @@
     "venue": "San Francisco Stadium (San Francisco, EUA)",
     "weather": "Vento moderado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.25,
-      "draw": 0.29,
-      "away": 0.46
-    },
     "prob_sofascore": {
       "home": 0.23,
       "draw": 0.3,
@@ -177,6 +192,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 25
+    },
+    "prob_google": {
+      "home": 0.25,
+      "draw": 0.29,
+      "away": 0.46
+    },
+    "prob_forebet": {
+      "home": 0.25,
+      "draw": 0.29,
+      "away": 0.46
     }
   },
   {
@@ -190,11 +215,6 @@
     "venue": "New York New Jersey Stadium (East Rutherford, EUA)",
     "weather": "Clima quente e úmido.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.62,
-      "draw": 0.23,
-      "away": 0.15
-    },
     "prob_sofascore": {
       "home": 0.6,
       "draw": 0.24,
@@ -213,6 +233,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 26
+    },
+    "prob_google": {
+      "home": 0.62,
+      "draw": 0.23,
+      "away": 0.15
+    },
+    "prob_forebet": {
+      "home": 0.62,
+      "draw": 0.23,
+      "away": 0.15
     }
   },
   {
@@ -226,11 +256,6 @@
     "venue": "Boston Stadium (Boston, EUA)",
     "weather": "Tarde nublada, temperatura amena.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.65,
-      "draw": 0.22,
-      "away": 0.13
-    },
     "prob_sofascore": {
       "home": 0.62,
       "draw": 0.23,
@@ -249,6 +274,16 @@
     "away_score": 0,
     "external_ids": {
       "scorepick": 27
+    },
+    "prob_google": {
+      "home": 0.65,
+      "draw": 0.22,
+      "away": 0.13
+    },
+    "prob_forebet": {
+      "home": 0.65,
+      "draw": 0.22,
+      "away": 0.13
     }
   },
   {
@@ -262,11 +297,6 @@
     "venue": "BC Place (Vancouver, Canadá)",
     "weather": "Clima ameno, estádio fechado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.35,
-      "draw": 0.28,
-      "away": 0.37
-    },
     "prob_sofascore": {
       "home": 0.33,
       "draw": 0.29,
@@ -285,6 +315,16 @@
     "away_score": 0,
     "external_ids": {
       "scorepick": 28
+    },
+    "prob_google": {
+      "home": 0.35,
+      "draw": 0.28,
+      "away": 0.37
+    },
+    "prob_forebet": {
+      "home": 0.35,
+      "draw": 0.28,
+      "away": 0.37
     }
   },
   {
@@ -298,11 +338,6 @@
     "venue": "Houston Stadium (Houston, EUA)",
     "weather": "Clima muito abafado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.9,
-      "draw": 0.08,
-      "away": 0.02
-    },
     "prob_sofascore": {
       "home": 0.88,
       "draw": 0.09,
@@ -321,6 +356,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 29
+    },
+    "prob_google": {
+      "home": 0.9,
+      "draw": 0.08,
+      "away": 0.02
+    },
+    "prob_forebet": {
+      "home": 0.9,
+      "draw": 0.08,
+      "away": 0.02
     }
   },
   {
@@ -334,11 +379,6 @@
     "venue": "Dallas Stadium (Dallas, EUA)",
     "weather": "Temperatura controlada.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.52,
-      "draw": 0.26,
-      "away": 0.22
-    },
     "prob_sofascore": {
       "home": 0.5,
       "draw": 0.27,
@@ -357,6 +397,16 @@
     "away_score": 2,
     "external_ids": {
       "scorepick": 30
+    },
+    "prob_google": {
+      "home": 0.52,
+      "draw": 0.26,
+      "away": 0.22
+    },
+    "prob_forebet": {
+      "home": 0.52,
+      "draw": 0.26,
+      "away": 0.22
     }
   },
   {
@@ -370,11 +420,6 @@
     "venue": "Philadelphia Stadium (Philadelphia, EUA)",
     "weather": "Clima fresco.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.38,
-      "draw": 0.3,
-      "away": 0.32
-    },
     "prob_sofascore": {
       "home": 0.36,
       "draw": 0.31,
@@ -393,6 +438,16 @@
     "away_score": 0,
     "external_ids": {
       "scorepick": 31
+    },
+    "prob_google": {
+      "home": 0.38,
+      "draw": 0.3,
+      "away": 0.32
+    },
+    "prob_forebet": {
+      "home": 0.38,
+      "draw": 0.3,
+      "away": 0.32
     }
   },
   {
@@ -406,11 +461,6 @@
     "venue": "Monterrey Stadium (Monterrey, México)",
     "weather": "Calor moderado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.55,
-      "draw": 0.26,
-      "away": 0.19
-    },
     "prob_sofascore": {
       "home": 0.52,
       "draw": 0.28,
@@ -429,6 +479,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 32
+    },
+    "prob_google": {
+      "home": 0.55,
+      "draw": 0.26,
+      "away": 0.19
+    },
+    "prob_forebet": {
+      "home": 0.55,
+      "draw": 0.26,
+      "away": 0.19
     }
   },
   {
@@ -442,11 +502,6 @@
     "venue": "Atlanta Stadium (Atlanta, EUA)",
     "weather": "Calor intenso, umidade moderada.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.8,
-      "draw": 0.14,
-      "away": 0.06
-    },
     "prob_sofascore": {
       "home": 0.76,
       "draw": 0.16,
@@ -465,6 +520,16 @@
     "away_score": 0,
     "external_ids": {
       "scorepick": 33
+    },
+    "prob_google": {
+      "home": 0.8,
+      "draw": 0.14,
+      "away": 0.06
+    },
+    "prob_forebet": {
+      "home": 0.8,
+      "draw": 0.14,
+      "away": 0.06
     }
   },
   {
@@ -478,11 +543,6 @@
     "venue": "BC Place (Vancouver, Canadá)",
     "weather": "Temperatura agradável (estádio fechado/teto retrátil).",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.58,
-      "draw": 0.24,
-      "away": 0.18
-    },
     "prob_sofascore": {
       "home": 0.54,
       "draw": 0.26,
@@ -501,6 +561,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 34
+    },
+    "prob_google": {
+      "home": 0.58,
+      "draw": 0.24,
+      "away": 0.18
+    },
+    "prob_forebet": {
+      "home": 0.58,
+      "draw": 0.24,
+      "away": 0.18
     }
   },
   {
@@ -514,11 +584,6 @@
     "venue": "Miami Stadium (Miami, EUA)",
     "weather": "Clima abafado típico da Flórida.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.12,
-      "draw": 0.22,
-      "away": 0.66
-    },
     "prob_sofascore": {
       "home": 0.14,
       "draw": 0.24,
@@ -537,6 +602,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 35
+    },
+    "prob_google": {
+      "home": 0.12,
+      "draw": 0.22,
+      "away": 0.66
+    },
+    "prob_forebet": {
+      "home": 0.12,
+      "draw": 0.22,
+      "away": 0.66
     }
   },
   {
@@ -550,11 +625,6 @@
     "venue": "Los Angeles Stadium (Los Angeles, EUA)",
     "weather": "Clima agradável.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.51,
-      "draw": 0.28,
-      "away": 0.21
-    },
     "prob_sofascore": {
       "home": 0.48,
       "draw": 0.29,
@@ -573,6 +643,16 @@
     "away_score": 2,
     "external_ids": {
       "scorepick": 36
+    },
+    "prob_google": {
+      "home": 0.51,
+      "draw": 0.28,
+      "away": 0.21
+    },
+    "prob_forebet": {
+      "home": 0.51,
+      "draw": 0.28,
+      "away": 0.21
     }
   },
   {
@@ -586,11 +666,6 @@
     "venue": "MetLife Stadium (East Rutherford, EUA)",
     "weather": "Noite fresca, vento moderado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.67,
-      "draw": 0.21,
-      "away": 0.12
-    },
     "prob_sofascore": {
       "home": 0.63,
       "draw": 0.23,
@@ -609,6 +684,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 37
+    },
+    "prob_google": {
+      "home": 0.67,
+      "draw": 0.21,
+      "away": 0.12
+    },
+    "prob_forebet": {
+      "home": 0.67,
+      "draw": 0.21,
+      "away": 0.12
     }
   },
   {
@@ -622,11 +707,6 @@
     "venue": "Gillette Stadium (Foxborough, EUA)",
     "weather": "Clima ameno de Massachusetts.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.16,
-      "draw": 0.24,
-      "away": 0.6
-    },
     "prob_sofascore": {
       "home": 0.18,
       "draw": 0.25,
@@ -645,6 +725,16 @@
     "away_score": 4,
     "external_ids": {
       "scorepick": 38
+    },
+    "prob_google": {
+      "home": 0.16,
+      "draw": 0.24,
+      "away": 0.6
+    },
+    "prob_forebet": {
+      "home": 0.16,
+      "draw": 0.24,
+      "away": 0.6
     }
   },
   {
@@ -658,11 +748,6 @@
     "venue": "Arrowhead Stadium (Kansas City, EUA)",
     "weather": "Clima quente, céu aberto.",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.73,
-      "draw": 0.18,
-      "away": 0.09
-    },
     "prob_sofascore": {
       "home": 0.7,
       "draw": 0.19,
@@ -676,7 +761,17 @@
     "tactical_analysis": "Argentina jogará com controle total de posse de bola e Lionel Messi flutuando entre as linhas. A Argélia é taticamente imprevisível, forte individualmente mas instável na defesa contra trocas de passes rápidas.",
     "key_factors": "Argentina completa e favorita ao título. Argélia aposta em contra-ataques rápidos com Mahrez (se atuar).",
     "pro_opinion": "Casimiro crê em noite festiva para Lionel Messi distribuindo assistências. Arnaldo Ribeiro aponta que a Argélia tem qualidade individual no ataque, mas peca na recomposição tática contra tabelas curtas.",
-    "cheeky_prediction": "3 - 1. A Argentina domina e goleia, mas a Argélia deve conseguir um gol de honra em jogada individual rápida."
+    "cheeky_prediction": "3 - 1. A Argentina domina e goleia, mas a Argélia deve conseguir um gol de honra em jogada individual rápida.",
+    "prob_google": {
+      "home": 0.73,
+      "draw": 0.18,
+      "away": 0.09
+    },
+    "prob_forebet": {
+      "home": 0.73,
+      "draw": 0.18,
+      "away": 0.09
+    }
   },
   {
     "id": "WC26-08",
@@ -689,11 +784,6 @@
     "venue": "Levi's Stadium (Santa Clara, EUA)",
     "weather": "Clima fresco da Califórnia.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.6,
-      "draw": 0.25,
-      "away": 0.15
-    },
     "prob_sofascore": {
       "home": 0.57,
       "draw": 0.27,
@@ -712,6 +802,16 @@
     "away_score": 1,
     "external_ids": {
       "scorepick": 40
+    },
+    "prob_google": {
+      "home": 0.6,
+      "draw": 0.25,
+      "away": 0.15
+    },
+    "prob_forebet": {
+      "home": 0.6,
+      "draw": 0.25,
+      "away": 0.15
     }
   },
   {
@@ -725,11 +825,6 @@
     "venue": "NRG Stadium (Houston, EUA)",
     "weather": "Clima quente e úmido de Houston.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.71,
-      "draw": 0.19,
-      "away": 0.1
-    },
     "prob_sofascore": {
       "home": 0.68,
       "draw": 0.2,
@@ -748,7 +843,17 @@
       "scorepick": 41
     },
     "home_score": 1,
-    "away_score": 1
+    "away_score": 1,
+    "prob_google": {
+      "home": 0.71,
+      "draw": 0.19,
+      "away": 0.1
+    },
+    "prob_forebet": {
+      "home": 0.71,
+      "draw": 0.19,
+      "away": 0.1
+    }
   },
   {
     "id": "WC26-10",
@@ -761,11 +866,6 @@
     "venue": "AT&T Stadium (Arlington, EUA)",
     "weather": "Clima ameno, estádio fechado.",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.49,
-      "draw": 0.28,
-      "away": 0.23
-    },
     "prob_sofascore": {
       "home": 0.46,
       "draw": 0.29,
@@ -784,7 +884,17 @@
       "scorepick": 42
     },
     "home_score": 4,
-    "away_score": 2
+    "away_score": 2,
+    "prob_google": {
+      "home": 0.49,
+      "draw": 0.28,
+      "away": 0.23
+    },
+    "prob_forebet": {
+      "home": 0.49,
+      "draw": 0.28,
+      "away": 0.23
+    }
   },
   {
     "id": "SP-39",
@@ -797,11 +907,6 @@
     "venue": "",
     "weather": "",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -820,7 +925,17 @@
       "scorepick": 39
     },
     "home_score": 3,
-    "away_score": 0
+    "away_score": 0,
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    }
   },
   {
     "id": "SP-43",
@@ -833,11 +948,6 @@
     "venue": "",
     "weather": "",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -856,7 +966,17 @@
       "scorepick": 43
     },
     "home_score": 1,
-    "away_score": 0
+    "away_score": 0,
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    }
   },
   {
     "id": "SP-44",
@@ -869,11 +989,6 @@
     "venue": "",
     "weather": "",
     "status": "FINISHED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -892,7 +1007,17 @@
       "scorepick": 44
     },
     "home_score": 1,
-    "away_score": 3
+    "away_score": 3,
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    }
   },
   {
     "id": "SP-45",
@@ -904,21 +1029,20 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.3,
+      "draw": 4.25,
+      "away": 18.07,
+      "over_25": 1.99,
+      "under_25": 1.79,
+      "btts_yes": 2.95,
+      "btts_no": 1.39
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -926,7 +1050,19 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 45
-    }
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "id": "SP-46",
@@ -938,21 +1074,20 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.78,
+      "draw": 3.33,
+      "away": 5.09,
+      "over_25": 2.25,
+      "under_25": 1.63,
+      "btts_yes": 2.28,
+      "btts_no": 1.61
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -960,7 +1095,19 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 46
-    }
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "home_score": 4,
+    "away_score": 1
   },
   {
     "id": "SP-47",
@@ -972,21 +1119,20 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.32,
+      "draw": 3.99,
+      "away": 19.02,
+      "over_25": 1.79,
+      "under_25": 1.99,
+      "btts_yes": 2.43,
+      "btts_no": 1.54
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -994,7 +1140,19 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 47
-    }
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "home_score": 6,
+    "away_score": 0
   },
   {
     "id": "SP-48",
@@ -1006,21 +1164,20 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.63,
+      "draw": 3.85,
+      "away": 5.39,
+      "over_25": 1.9,
+      "under_25": 1.88,
+      "btts_yes": 1.9,
+      "btts_no": 1.87
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -1028,7 +1185,19 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 48
-    }
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "home_score": 1,
+    "away_score": 0
   },
   {
     "id": "SP-49",
@@ -1041,11 +1210,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1062,6 +1226,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 49
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1075,11 +1249,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1096,6 +1265,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 50
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1109,11 +1288,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1130,6 +1304,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 51
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1143,11 +1327,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1164,6 +1343,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 52
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1177,11 +1366,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1198,6 +1382,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 53
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1211,11 +1405,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1232,6 +1421,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 54
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1245,11 +1444,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1266,6 +1460,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 55
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1279,11 +1483,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1300,6 +1499,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 56
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1313,11 +1522,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1334,6 +1538,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 57
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1347,11 +1561,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1368,6 +1577,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 58
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1381,11 +1600,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1402,6 +1616,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 59
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1415,11 +1639,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1436,6 +1655,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 60
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1449,11 +1678,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1470,6 +1694,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 61
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1483,11 +1717,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1504,6 +1733,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 62
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1517,11 +1756,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1538,6 +1772,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 63
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1551,11 +1795,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1572,6 +1811,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 64
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1585,11 +1834,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1606,6 +1850,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 65
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1619,11 +1873,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1640,6 +1889,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 66
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1653,11 +1912,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1674,6 +1928,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 67
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1687,11 +1951,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1708,6 +1967,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 68
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1721,11 +1990,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1742,6 +2006,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 69
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1755,11 +2029,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1776,6 +2045,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 70
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1789,11 +2068,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1810,6 +2084,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 71
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1823,11 +2107,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1844,6 +2123,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 72
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1857,11 +2146,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1878,6 +2162,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 74
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1891,11 +2185,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1912,6 +2201,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 73
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1925,11 +2224,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1946,6 +2240,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 75
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1959,11 +2263,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1980,6 +2279,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 76
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -1993,11 +2302,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2014,6 +2318,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 78
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2027,11 +2341,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2048,6 +2357,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 77
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2061,11 +2380,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2082,6 +2396,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 80
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2095,11 +2419,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2116,6 +2435,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 79
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2129,11 +2458,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2150,6 +2474,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 81
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2163,11 +2497,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2184,6 +2513,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 82
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2197,11 +2536,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2218,6 +2552,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 83
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2231,11 +2575,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2252,6 +2591,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 84
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2265,11 +2614,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2286,6 +2630,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 85
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2299,11 +2653,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2320,6 +2669,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 86
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2333,11 +2692,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2354,6 +2708,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 87
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2367,11 +2731,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2388,6 +2747,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 88
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2401,11 +2770,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2422,6 +2786,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 90
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2435,11 +2809,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2456,6 +2825,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 89
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2469,11 +2848,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2490,6 +2864,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 91
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   },
   {
@@ -2503,11 +2887,6 @@
     "venue": "",
     "weather": "",
     "status": "SCHEDULED",
-    "prob_opta": {
-      "home": 0.333,
-      "draw": 0.333,
-      "away": 0.334
-    },
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -2524,6 +2903,16 @@
     "cheeky_prediction": "",
     "external_ids": {
       "scorepick": 92
+    },
+    "prob_google": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
+    },
+    "prob_forebet": {
+      "home": 0.333,
+      "draw": 0.333,
+      "away": 0.334
     }
   }
 ]

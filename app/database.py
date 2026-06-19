@@ -61,14 +61,129 @@ def init_db():
         "weight_understat": "0.3",
         "weight_odds": "0.4",
         "weight_whoscored": "0.1",
-        "weight_opta": "0.0",
+        "weight_google": "0.0",
+        "weight_forebet": "0.0",
         "odds_api_key": ""
     }
     for k, v in default_weights.items():
         cursor.execute("INSERT OR IGNORE INTO settings (key, value) VALUES (?, ?)", (k, v))
         
+    # Create world_cup_team_rounds table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS world_cup_team_rounds (
+        team_name TEXT NOT NULL,
+        round TEXT NOT NULL,
+        fifa_rank INTEGER,
+        fifa_points REAL,
+        pele_rating REAL,
+        qualitative_status TEXT,
+        PRIMARY KEY (team_name, round),
+        FOREIGN KEY (team_name) REFERENCES world_cup_teams (team_name) ON DELETE CASCADE
+    )
+    """)
+    
+    # Verify/create top_11_value_eur column in world_cup_teams if table exists
+    try:
+        cursor.execute("SELECT top_11_value_eur FROM world_cup_teams LIMIT 1")
+    except sqlite3.OperationalError:
+        try:
+            cursor.execute("ALTER TABLE world_cup_teams ADD COLUMN top_11_value_eur REAL DEFAULT 0.0")
+        except sqlite3.OperationalError:
+            pass
+            
     conn.commit()
     conn.close()
+
+def get_team_metrics(round_name=None):
+    """
+    Query teams metrics joined with their round-by-round statistics.
+    Supports filtering by specific round or fetching the current (latest) round state.
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    # Sort order mapping helper for SQLite
+    round_case = """
+        CASE r.round 
+            WHEN 'Pré-Copa' THEN 0 
+            WHEN 'Rodada 1' THEN 1 
+            WHEN 'Rodada 2' THEN 2 
+            WHEN 'Rodada 3' THEN 3 
+            WHEN 'Oitavas de Final' THEN 4
+            WHEN 'Quartas de Final' THEN 5
+            WHEN 'Semifinal' THEN 6
+            WHEN 'Final' THEN 7
+            ELSE 99 END
+    """
+    
+    if round_name and round_name != "all" and round_name != "current":
+        cursor.execute(f"""
+            SELECT t.team_name, t.name_en, t.emoji, t.market_value_eur, t.top_11_value_eur,
+                   r.round, r.fifa_rank, r.fifa_points, r.pele_rating, r.qualitative_status
+            FROM world_cup_teams t
+            JOIN world_cup_team_rounds r ON t.team_name = r.team_name
+            WHERE r.round = ?
+            ORDER BY t.market_value_eur DESC
+        """, (round_name,))
+    elif round_name == "current":
+        # Get the latest round for each team
+        cursor.execute(f"""
+            SELECT t.team_name, t.name_en, t.emoji, t.market_value_eur, t.top_11_value_eur,
+                   r.round, r.fifa_rank, r.fifa_points, r.pele_rating, r.qualitative_status
+            FROM world_cup_teams t
+            JOIN world_cup_team_rounds r ON t.team_name = r.team_name
+            WHERE r.round = (
+                SELECT r2.round FROM world_cup_team_rounds r2 
+                WHERE r2.team_name = t.team_name 
+                ORDER BY {round_case.replace("r.", "r2.")} DESC LIMIT 1
+            )
+            ORDER BY t.market_value_eur DESC
+        """)
+    else:
+        # All history
+        cursor.execute(f"""
+            SELECT t.team_name, t.name_en, t.emoji, t.market_value_eur, t.top_11_value_eur,
+                   r.round, r.fifa_rank, r.fifa_points, r.pele_rating, r.qualitative_status
+            FROM world_cup_teams t
+            JOIN world_cup_team_rounds r ON t.team_name = r.team_name
+            ORDER BY {round_case} ASC, t.market_value_eur DESC
+        """)
+        
+    rows = cursor.fetchall()
+    conn.close()
+    return [dict(row) for row in rows]
+
+def export_team_metrics_to_csv():
+    """
+    Exports all team metrics from all rounds in a tidy/long format CSV file.
+    """
+    import csv
+    metrics = get_team_metrics(round_name="all")
+    csv_path = "/home/rafa/Projects/bolao/world_cup_teams_metrics.csv"
+    headers = [
+        "team_name", "round", "market_value_eur", "top_11_value_eur", 
+        "fifa_rank", "fifa_points", "pele_rating", "qualitative_status"
+    ]
+    try:
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=headers)
+            writer.writeheader()
+            for row in metrics:
+                writer.writerow({
+                    "team_name": row["team_name"],
+                    "round": row["round"],
+                    "market_value_eur": row["market_value_eur"],
+                    "top_11_value_eur": row["top_11_value_eur"],
+                    "fifa_rank": row["fifa_rank"],
+                    "fifa_points": row["fifa_points"],
+                    "pele_rating": row["pele_rating"],
+                    "qualitative_status": row["qualitative_status"]
+                })
+        return True
+    except Exception as e:
+        import logging
+        logging.getLogger("BolaoAPI").error(f"Erro ao exportar métricas de seleções para CSV: {e}")
+        return False
 
 def save_match(home_team, away_team, league, match_date, status='SCHEDULED', home_score=None, away_score=None, external_ids=None):
     """
