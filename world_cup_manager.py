@@ -625,8 +625,29 @@ def compute_predictions(match, settings):
     # Escolha do palpite ideal baseada na estratégia configurada (ML ou EP)
     strategy = settings.get("prediction_strategy", "ML")
     if strategy == "ML":
-        best_guess = sorted(score_probs.items(), key=lambda x: x[1], reverse=True)[0][0]
+        # 1. Determine dominant outcome
+        if consensus_h > consensus_d and consensus_h > consensus_a:
+            dominant_outcome = "HOME"
+        elif consensus_a > consensus_h and consensus_a > consensus_d:
+            dominant_outcome = "AWAY"
+        else:
+            dominant_outcome = "DRAW"
+            
+        # 2. Filter scores matching the outcome
+        filtered_scores = {}
+        for (h, a), p in score_probs.items():
+            outcome = "HOME" if h > a else ("AWAY" if h < a else "DRAW")
+            if outcome == dominant_outcome:
+                filtered_scores[(h, a)] = p
+                
+        if not filtered_scores:
+            filtered_scores = score_probs
+            
+        # 3. Sort filtered scores
+        sorted_filtered = sorted(filtered_scores.items(), key=lambda x: x[1], reverse=True)
+        best_guess = sorted_filtered[0][0]
         max_ep = calculate_expected_points(best_guess[0], best_guess[1], score_probs)
+        top_scores = sorted_filtered[:3]
     else:
         best_guess = (1, 1)
         max_ep = -1.0
@@ -636,13 +657,33 @@ def compute_predictions(match, settings):
                 if ep > max_ep:
                     max_ep = ep
                     best_guess = (gh, ga)
+        top_scores = sorted(score_probs.items(), key=lambda x: x[1], reverse=True)[:3]
                 
+    prob_under_25 = sum(p for (h, a), p in score_probs.items() if h + a < 2.5)
+    prob_over_25 = sum(p for (h, a), p in score_probs.items() if h + a > 2.5)
+    sum_uo = prob_under_25 + prob_over_25
+    if sum_uo > 0:
+        prob_under_25 /= sum_uo
+        prob_over_25 /= sum_uo
+        
+    prob_btts_yes = sum(p for (h, a), p in score_probs.items() if h > 0 and a > 0)
+    prob_btts_no = sum(p for (h, a), p in score_probs.items() if h == 0 or a == 0)
+    sum_btts = prob_btts_yes + prob_btts_no
+    if sum_btts > 0:
+        prob_btts_yes /= sum_btts
+        prob_btts_no /= sum_btts
+
     return {
         "consensus": (consensus_h, consensus_d, consensus_a),
         "suggested": best_guess,
         "expected_points": max_ep,
-        "top_scores": sorted(score_probs.items(), key=lambda x: x[1], reverse=True)[:3]
+        "top_scores": top_scores,
+        "under_25": prob_under_25,
+        "over_25": prob_over_25,
+        "btts_yes": prob_btts_yes,
+        "btts_no": prob_btts_no
     }
+
 
 # Read existing results from CSV (to preserve actual scores entered by user)
 def read_csv_scores():
@@ -956,6 +997,25 @@ def print_markdown_report(date_str=None):
         prob_a = consensus[2] * 100
         print(f"* **Probabilidades Consolidadas (H/D/A):** {prob_h:.1f}% ({match['home_team']}) / {prob_d:.1f}% (Empate) / {prob_a:.1f}% ({match['away_team']})")
         print(f"* **Odds Médias (H/D/A):** {match['odds']['home']:.2f} / {match['odds']['draw']:.2f} / {match['odds']['away']:.2f}")
+        
+        prob_under = pred["under_25"] * 100
+        prob_over = pred["over_25"] * 100
+        prob_btts_y = pred["btts_yes"] * 100
+        prob_btts_n = pred["btts_no"] * 100
+        
+        odds_u25_val = match.get('odds', {}).get('under_25', 0.0)
+        odds_o25_val = match.get('odds', {}).get('over_25', 0.0)
+        odds_u25 = f"{odds_u25_val:.2f}" if odds_u25_val > 0 else "N/A"
+        odds_o25 = f"{odds_o25_val:.2f}" if odds_o25_val > 0 else "N/A"
+        
+        odds_btts_yes_val = match.get('odds', {}).get('btts_yes', 0.0)
+        odds_btts_no_val = match.get('odds', {}).get('btts_no', 0.0)
+        odds_by = f"{odds_btts_yes_val:.2f}" if odds_btts_yes_val > 0 else "N/A"
+        odds_bn = f"{odds_btts_no_val:.2f}" if odds_btts_no_val > 0 else "N/A"
+        
+        print(f"* **Under/Over 2.5 Gols:** Under 2.5 ({prob_under:.1f}%) / Over 2.5 ({prob_over:.1f}%) | Odds: Under ({odds_u25}) / Over ({odds_o25})")
+        print(f"* **Ambos Marcam (BTTS):** Sim ({prob_btts_y:.1f}%) / Não ({prob_btts_n:.1f}%) | Odds: Sim ({odds_by}) / Não ({odds_bn})")
+
         print()
         print("**📋 Análise Tática e Contextual**")
         print()

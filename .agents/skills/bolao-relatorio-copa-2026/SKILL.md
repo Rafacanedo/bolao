@@ -1,13 +1,13 @@
 ---
 name: bolao-relatorio-copa-2026
 description: >-
-  Gera o relatório qualitativo estruturado dos jogos da Copa do Mundo de 2026, com os top 3 palpites matemáticos e estatísticas de acurácia.
+  Gera o relatório qualitativo estruturado dos jogos da Copa do Mundo de 2026, com os top 3 palpites matemáticos, estatísticas de acurácia, e linhas de under/over 2.5 e ambos marcam.
 ---
 
 # Relatório Qualitativo da Copa do Mundo 2026
 
 ## Overview
-Esta skill local gera e exibe o relatório qualitativo estruturado dos jogos da Copa do Mundo de 2026. Ela roda o script de previsão tática e mostra os palpites matemáticos otimizados (top 3 placares por jogo), as análises táticas detalhadas e as métricas acumuladas de acurácia do modelo (conforme os resultados reais são inseridos).
+Esta skill local gera e exibe o relatório qualitativo estruturado dos jogos da Copa do Mundo de 2026. Ela roda o script de previsão tática e mostra os palpites matemáticos otimizados (top 3 placares por jogo), as linhas e odds de under/over 2.5 e ambos marcam (BTTS), as análises táticas detalhadas e as métricas acumuladas de acurácia do modelo (conforme os resultados reais são inseridos).
 
 ## Dependencies
 Esta skill requer que o ambiente virtual do Python esteja configurado no repositório.

@@ -1209,7 +1209,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1236,7 +1236,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "id": "SP-50",
@@ -1248,7 +1250,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1275,7 +1277,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 0,
+    "away_score": 1
   },
   {
     "id": "SP-51",
@@ -1287,7 +1291,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1314,7 +1318,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 3,
+    "away_score": 0
   },
   {
     "id": "SP-52",
@@ -1326,7 +1332,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1353,7 +1359,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 0,
+    "away_score": 1
   },
   {
     "id": "SP-53",
@@ -1365,7 +1373,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1392,7 +1400,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 5,
+    "away_score": 1
   },
   {
     "id": "SP-54",
@@ -1404,7 +1414,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1431,7 +1441,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 2,
+    "away_score": 1
   },
   {
     "id": "SP-55",
@@ -1443,7 +1455,7 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
@@ -1470,7 +1482,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 0,
+    "away_score": 0
   },
   {
     "id": "SP-56",
@@ -1482,16 +1496,20 @@
     "stage": "Round 2",
     "venue": "",
     "weather": "",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "prob_sofascore": {
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 8.7,
+      "draw": 4.32,
+      "away": 1.4,
+      "over_25": 2.02,
+      "under_25": 1.77,
+      "btts_yes": 2.15,
+      "btts_no": 1.68
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -1509,7 +1527,9 @@
       "home": 0.333,
       "draw": 0.333,
       "away": 0.334
-    }
+    },
+    "home_score": 0,
+    "away_score": 4
   },
   {
     "id": "SP-57",
@@ -1528,9 +1548,13 @@
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.07,
+      "draw": 12.89,
+      "away": 19.34,
+      "over_25": 1.39,
+      "under_25": 2.94,
+      "btts_yes": 6.71,
+      "btts_no": 1.1
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -1567,9 +1591,13 @@
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.12,
+      "draw": 8.62,
+      "away": 19.21,
+      "over_25": 2.3,
+      "under_25": 1.6,
+      "btts_yes": 3.9,
+      "btts_no": 1.24
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -1606,9 +1634,13 @@
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 1.08,
+      "draw": 11.65,
+      "away": 19.5,
+      "over_25": 1.62,
+      "under_25": 2.25,
+      "btts_yes": 6.94,
+      "btts_no": 1.09
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
@@ -1645,9 +1677,13 @@
       "away": 0.334
     },
     "odds": {
-      "home": 3.0,
-      "draw": 3.0,
-      "away": 2.99
+      "home": 6.47,
+      "draw": 5.42,
+      "away": 1.39,
+      "over_25": 1.84,
+      "under_25": 1.94,
+      "btts_yes": 2.52,
+      "btts_no": 1.51
     },
     "tactical_analysis": "Previsão baseada nas probabilidades oficiais da ScorePick (33% / 33% / 33%).",
     "key_factors": "Análise estatística baseada em probabilidades consolidadas.",
