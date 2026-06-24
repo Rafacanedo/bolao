@@ -1,0 +1,17 @@
+{
+  "weight_sofascore": 0.24831858059583312,
+  "weight_odds": 0.2551550037289789,
+  "odds_api_key": "",
+  "predicted_champion": "Fran\u00e7a",
+  "predicted_top_scorer": "Kylian Mbapp\u00e9",
+  "points_champion": 0,
+  "points_top_scorer": 0,
+  "resolved_champion": false,
+  "resolved_top_scorer": false,
+  "scorepick_email": "rafacanedoa@gmail.com",
+  "scorepick_password": "ECV7Ray5qgqf2LE",
+  "scorepick_pool_id": "37d8475e-7f69-471e-8407-e9aa9b44e9e6",
+  "prediction_strategy": "ML",
+  "weight_google": 0.248263207837594,
+  "weight_forebet": 0.248263207837594
+}

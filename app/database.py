@@ -155,14 +155,29 @@ def get_team_metrics(round_name=None):
 
 def export_team_metrics_to_csv():
     """
-    Exports all team metrics from all rounds in a tidy/long format CSV file.
+    Exports all team metrics from all rounds in a tidy/long format CSV file,
+    returning Pelé Rank instead of Pelé Rating.
     """
     import csv
     metrics = get_team_metrics(round_name="all")
+    
+    # Group rows by round to calculate ranks per round
+    from collections import defaultdict
+    rounds_data = defaultdict(list)
+    for row in metrics:
+        rounds_data[row["round"]].append(row)
+        
+    # Calculate Pelé Rank for each team within each round
+    for rnd, rows_in_round in rounds_data.items():
+        # Sort by pele_rating descending
+        sorted_rows = sorted(rows_in_round, key=lambda x: x["pele_rating"] if x["pele_rating"] is not None else 0.0, reverse=True)
+        for idx, row in enumerate(sorted_rows):
+            row["pele_rank"] = idx + 1
+            
     csv_path = "/home/rafa/Projects/bolao/world_cup_teams_metrics.csv"
     headers = [
         "team_name", "round", "market_value_eur", "top_11_value_eur", 
-        "fifa_rank", "fifa_points", "pele_rating", "qualitative_status"
+        "fifa_rank", "fifa_points", "pele_rank", "qualitative_status"
     ]
     try:
         with open(csv_path, "w", newline="", encoding="utf-8") as f:
@@ -176,7 +191,7 @@ def export_team_metrics_to_csv():
                     "top_11_value_eur": row["top_11_value_eur"],
                     "fifa_rank": row["fifa_rank"],
                     "fifa_points": row["fifa_points"],
-                    "pele_rating": row["pele_rating"],
+                    "pele_rank": row["pele_rank"],
                     "qualitative_status": row["qualitative_status"]
                 })
         return True

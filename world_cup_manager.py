@@ -424,14 +424,22 @@ def load_team_metrics():
     try:
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
-        cursor.execute("SELECT team_name, fifa_points, market_value_eur, pele_rating, pele_tilt FROM world_cup_teams")
+        cursor.execute("SELECT team_name, fifa_points, market_value_eur, pele_rating, pele_tilt, emoji, fifa_rank FROM world_cup_teams")
         rows = cursor.fetchall()
         conn.close()
+        
+        # Sort rows by pele_rating descending to determine rank
+        sorted_by_pele = sorted(rows, key=lambda x: x[3] if x[3] is not None else 0.0, reverse=True)
+        pele_ranks = {row[0]: idx + 1 for idx, row in enumerate(sorted_by_pele)}
+        
         return {r[0]: {
             "fifa_points": r[1],
             "market_value": r[2],
             "pele_rating": r[3],
-            "pele_tilt": r[4]
+            "pele_tilt": r[4],
+            "emoji": r[5],
+            "fifa_rank": r[6],
+            "pele_rank": pele_ranks[r[0]]
         } for r in rows}
     except Exception as e:
         print(f"Erro ao carregar métricas das seleções do banco de dados: {e}")
@@ -673,6 +681,50 @@ def compute_predictions(match, settings):
         prob_btts_yes /= sum_btts
         prob_btts_no /= sum_btts
 
+    # Determine dominant outcome from consensus
+    if consensus_h > consensus_d and consensus_h > consensus_a:
+        dom_outcome = "home"
+        max_prob = consensus_h
+    elif consensus_a > consensus_h and consensus_a > consensus_d:
+        dom_outcome = "away"
+        max_prob = consensus_a
+    else:
+        dom_outcome = "draw"
+        max_prob = consensus_d
+
+    # Collect source probabilities for standard deviation calculation
+    src_probs = [
+        pele_prob[dom_outcome],
+        fifa_tm_prob[dom_outcome],
+        odds_prob[dom_outcome]
+    ]
+    if not is_google_fallback and not is_sofa_fallback:
+        src_probs.append(google[dom_outcome])
+        src_probs.append(forebet[dom_outcome])
+        src_probs.append(sofa[dom_outcome])
+
+    # Calculate standard deviation
+    n_src = len(src_probs)
+    mean_src = sum(src_probs) / n_src
+    var_src = sum((p - mean_src) ** 2 for p in src_probs) / n_src
+    std_dev = math.sqrt(var_src)
+
+    # Classify Confidence Level
+    if max_prob >= 0.55:
+        confidence_lvl = "🟢 Alta"
+    elif max_prob >= 0.40:
+        confidence_lvl = "🟡 Média"
+    else:
+        confidence_lvl = "🔴 Baixa"
+
+    # Classify Risk Level
+    if std_dev < 0.08:
+        risk_lvl = "🟢 Baixo"
+    elif std_dev < 0.15:
+        risk_lvl = "🟡 Moderado"
+    else:
+        risk_lvl = "🔴 Alto"
+
     return {
         "consensus": (consensus_h, consensus_d, consensus_a),
         "suggested": best_guess,
@@ -681,7 +733,11 @@ def compute_predictions(match, settings):
         "under_25": prob_under_25,
         "over_25": prob_over_25,
         "btts_yes": prob_btts_yes,
-        "btts_no": prob_btts_no
+        "btts_no": prob_btts_no,
+        "confidence_level": confidence_lvl,
+        "confidence_prob": max_prob * 100.0,
+        "risk_level": risk_lvl,
+        "risk_divergence": std_dev * 100.0
     }
 
 
@@ -876,13 +932,26 @@ def tune_weights():
     save_settings(settings)
 
 # Print Qualitative Markdown Report
-def print_markdown_report(date_str=None):
+def print_markdown_report(date_str=None, team_str=None, stage_str=None, status_str=None):
     settings = load_settings()
     existing_scores = read_csv_scores()
     
     print("\n# 🏆 COPA DO MUNDO 2026 - CENTRO DE PREVISÕES TÁTICAS")
     print(f"**Data local:** {datetime.now().strftime('%d/%m/%Y %H:%M')}  ")
     print(f"**Pesos do Modelo:** Google ({settings.get('weight_google', 0):.0%}) | Forebet ({settings.get('weight_forebet', 0):.0%}) | Sofascore ({settings.get('weight_sofascore'):.0%}) | Odds ({settings.get('weight_odds'):.0%})")
+    
+    has_active_filter = (date_str is not None) or (team_str is not None) or (stage_str is not None) or (status_str is not None)
+    active_filters = []
+    if date_str:
+        active_filters.append(f"Data: {date_str}")
+    elif not has_active_filter:
+        active_filters.append(f"Data: {datetime.now().strftime('%Y-%m-%d')} (Hoje)")
+    if team_str: active_filters.append(f"Seleção: {team_str}")
+    if stage_str: active_filters.append(f"Fase: {stage_str}")
+    if status_str: active_filters.append(f"Status: {status_str}")
+    
+    if active_filters:
+        print(f"**Filtros Ativos:** {', '.join(active_filters)}  ")
     print()
     print("---")
     
@@ -906,7 +975,7 @@ def print_markdown_report(date_str=None):
                             prob_h = float(row["consensus_home"])
                             prob_d = float(row["consensus_draw"])
                             prob_a = float(row["consensus_away"])
-                        except (ValueError, KeyError, TypeError, ValueError):
+                        except (ValueError, KeyError, TypeError):
                             # Fallback: compute prediction from matches JSON
                             m_id = row.get("match_id")
                             match = next((m for m in WORLD_CUP_MATCHES if m["id"] == m_id), None)
@@ -963,41 +1032,121 @@ def print_markdown_report(date_str=None):
     print("\n---")
     # ---------------------------------------------------------------------
     
-    today_str = date_str if date_str else datetime.now().strftime("%Y-%m-%d")
     printed_count = 0
     
     for i, match in enumerate(WORLD_CUP_MATCHES):
-        match_date_str = match["date"].split(" ")[0]
-        if match_date_str != today_str:
-            continue
-            
+        # 1. Filter by Date (only if date_str is specified, or if no filter is active, in which case we default to today)
+        if date_str:
+            match_date_str = match["date"].split(" ")[0]
+            if match_date_str != date_str:
+                continue
+        elif not has_active_filter:
+            today_str = datetime.now().strftime("%Y-%m-%d")
+            match_date_str = match["date"].split(" ")[0]
+            if match_date_str != today_str:
+                continue
+                
+        # 2. Filter by Team
+        if team_str:
+            t_str = team_str.lower()
+            if t_str not in match["home_team"].lower() and t_str not in match["away_team"].lower():
+                continue
+                
+        # 3. Filter by Stage
+        if stage_str:
+            s_str = stage_str.lower()
+            if s_str not in match.get("stage", "").lower():
+                continue
+                
+        # 4. Filter by Status
+        if status_str:
+            st_str = status_str.upper()
+            if match.get("status", "").upper() != st_str:
+                continue
+                
         printed_count += 1
         m_id = match["id"]
         pred = compute_predictions(match, settings)
         consensus = pred["consensus"]
+        suggested = pred["suggested"]
         
         # Check if match has finished score
-        score_text = ""
+        is_finished = match.get("status") == "FINISHED" or (m_id in existing_scores and existing_scores[m_id]["status"] == "FINISHED")
+        home_actual = None
+        away_actual = None
         if m_id in existing_scores:
-            score_text = f" (Resultado Real: {existing_scores[m_id]['home']}x{existing_scores[m_id]['away']})"
+            home_actual = existing_scores[m_id]["home"]
+            away_actual = existing_scores[m_id]["away"]
             
-        home_emoji = match.get("home_emoji", "")
-        away_emoji = match.get("away_emoji", "")
-        
+        # Get emojis (fallback to TEAM_METRICS if empty)
+        home_emoji = match.get("home_emoji", "").strip()
+        if not home_emoji:
+            home_emoji = TEAM_METRICS.get(match["home_team"], {}).get("emoji", "")
+        away_emoji = match.get("away_emoji", "").strip()
+        if not away_emoji:
+            away_emoji = TEAM_METRICS.get(match["away_team"], {}).get("emoji", "")
+            
+        home_disp = f"{home_emoji} {match['home_team']}".strip()
+        away_disp = f"{match['away_team']} {away_emoji}".strip()
+            
+        if is_finished and home_actual is not None:
+            # Concise outcome and exact score accuracy check
+            suggested_outcome = "HOME" if suggested[0] > suggested[1] else ("AWAY" if suggested[0] < suggested[1] else "DRAW")
+            actual_outcome = "HOME" if home_actual > away_actual else ("AWAY" if home_actual < away_actual else "DRAW")
+            
+            outcome_match = (suggested_outcome == actual_outcome)
+            exact_match = (suggested[0] == home_actual and suggested[1] == away_actual)
+            
+            if exact_match:
+                acc_text = "🎯 Placar Exato!"
+            elif outcome_match:
+                acc_text = "✓ Vencedor Correto"
+            else:
+                acc_text = "✗ Errou"
+                
+            print(f"\n### {printed_count}. {home_disp} {home_actual}x{away_actual} {away_disp} (Resultado Real)")
+            print(f"* **Palpite do Modelo:** {suggested[0]}x{suggested[1]} ({acc_text})")
+            print("\n" + "-" * 85)
+            continue
+            
         # Extract time from date string (format "2026-06-15 15:00")
-        dt = datetime.strptime(match["date"], "%Y-%m-%d %H:%M")
-        time_str = dt.strftime("%H:%M")
+        try:
+            dt = datetime.strptime(match["date"], "%Y-%m-%d %H:%M")
+            time_str = dt.strftime("%H:%M")
+        except Exception:
+            time_str = match["date"][11:16]
+            
+        print(f"\n### {printed_count}. {home_disp} vs. {away_disp}\n")
+        print(f"* **Grupo/Fase:** {match['stage']} | **Horário:** {time_str} (Brasília)")
         
-        print(f"\n### {printed_count}. {home_emoji} {match['home_team']} vs. {away_emoji} {match['away_team']}{score_text}\n")
-        print(f"* **Grupo:** {match['stage']} | **Horário:** {time_str} (Brasília)")
-        print(f"* **Local:** {match['venue']} - {match.get('weather', '')}")
+        # Display Venue and Weather conditional on text existence
+        venue_text = match.get("venue", "").strip()
+        weather_text = match.get("weather", "").strip()
+        if venue_text or weather_text:
+            loc_parts = []
+            if venue_text and venue_text != "-":
+                loc_parts.append(venue_text)
+            if weather_text and weather_text != "-":
+                loc_parts.append(weather_text)
+            if loc_parts:
+                print(f"* **Local:** {', '.join(loc_parts)}")
+                
+        # Confidence and Risk Indicators
+        print(f"* **Nível de Confiança:** {pred['confidence_level']} ({pred['confidence_prob']:.1f}%)")
+        print(f"* **Fator de Risco:** {pred['risk_level']} (Divergência entre fontes: {pred['risk_divergence']:.1f}%)")
         
         prob_h = consensus[0] * 100
         prob_d = consensus[1] * 100
         prob_a = consensus[2] * 100
         print(f"* **Probabilidades Consolidadas (H/D/A):** {prob_h:.1f}% ({match['home_team']}) / {prob_d:.1f}% (Empate) / {prob_a:.1f}% ({match['away_team']})")
-        print(f"* **Odds Médias (H/D/A):** {match['odds']['home']:.2f} / {match['odds']['draw']:.2f} / {match['odds']['away']:.2f}")
         
+        # Display main odds
+        odds_h = match.get("odds", {}).get("home", 0.0)
+        odds_d = match.get("odds", {}).get("draw", 0.0)
+        odds_a = match.get("odds", {}).get("away", 0.0)
+        if odds_h > 0 and odds_d > 0 and odds_a > 0:
+            print(f"* **Odds Médias (H/D/A):** {odds_h:.2f} / {odds_d:.2f} / {odds_a:.2f}")
+            
         prob_under = pred["under_25"] * 100
         prob_over = pred["over_25"] * 100
         prob_btts_y = pred["btts_yes"] * 100
@@ -1005,23 +1154,62 @@ def print_markdown_report(date_str=None):
         
         odds_u25_val = match.get('odds', {}).get('under_25', 0.0)
         odds_o25_val = match.get('odds', {}).get('over_25', 0.0)
-        odds_u25 = f"{odds_u25_val:.2f}" if odds_u25_val > 0 else "N/A"
-        odds_o25 = f"{odds_o25_val:.2f}" if odds_o25_val > 0 else "N/A"
-        
         odds_btts_yes_val = match.get('odds', {}).get('btts_yes', 0.0)
         odds_btts_no_val = match.get('odds', {}).get('btts_no', 0.0)
-        odds_by = f"{odds_btts_yes_val:.2f}" if odds_btts_yes_val > 0 else "N/A"
-        odds_bn = f"{odds_btts_no_val:.2f}" if odds_btts_no_val > 0 else "N/A"
         
-        print(f"* **Under/Over 2.5 Gols:** Under 2.5 ({prob_under:.1f}%) / Over 2.5 ({prob_over:.1f}%) | Odds: Under ({odds_u25}) / Over ({odds_o25})")
-        print(f"* **Ambos Marcam (BTTS):** Sim ({prob_btts_y:.1f}%) / Não ({prob_btts_n:.1f}%) | Odds: Sim ({odds_by}) / Não ({odds_bn})")
+        # Display Under/Over 2.5 and BTTS with conditional odds
+        odds_uo_str = ""
+        if odds_u25_val > 0 and odds_o25_val > 0:
+            odds_uo_str = f" | Odds: Under ({odds_u25_val:.2f}) / Over ({odds_o25_val:.2f})"
+        print(f"* **Under/Over 2.5 Gols:** Under 2.5 ({prob_under:.1f}%) / Over 2.5 ({prob_over:.1f}%){odds_uo_str}")
+        
+        odds_btts_str = ""
+        if odds_btts_yes_val > 0 and odds_btts_no_val > 0:
+            odds_btts_str = f" | Odds: Sim ({odds_btts_yes_val:.2f}) / Não ({odds_btts_no_val:.2f})"
+        print(f"* **Ambos Marcam (BTTS):** Sim ({prob_btts_y:.1f}%) / Não ({prob_btts_n:.1f}%){odds_btts_str}")
 
         print()
         print("**📋 Análise Tática e Contextual**")
         print()
-        print(f"* **O Confronto Tático:** {match['tactical_analysis']}")
-        print(f"* **Notícias & Fatores Físicos:** {match['key_factors']}")
-        print(f"* **O que dizem os Profissionais:** {match.get('pro_opinion', '')}")
+        
+        # Dynamic tactical analysis template if empty/generic
+        tact_analysis = match.get("tactical_analysis", "").strip()
+        is_generic_tact = "Previsão baseada" in tact_analysis or not tact_analysis
+        if is_generic_tact:
+            home_rank = TEAM_METRICS.get(match["home_team"], {}).get("fifa_rank", "N/A")
+            away_rank = TEAM_METRICS.get(match["away_team"], {}).get("fifa_rank", "N/A")
+            home_pele_rank = TEAM_METRICS.get(match["home_team"], {}).get("pele_rank", "N/A")
+            away_pele_rank = TEAM_METRICS.get(match["away_team"], {}).get("pele_rank", "N/A")
+            home_rating = TEAM_METRICS.get(match["home_team"], {}).get("pele_rating", 1750.0)
+            away_rating = TEAM_METRICS.get(match["away_team"], {}).get("pele_rating", 1750.0)
+            
+            diff_rating = abs(home_rating - away_rating)
+            if diff_rating > 150:
+                strength_desc = f"amplo favoritismo da seleção de {match['home_team'] if home_rating > away_rating else match['away_team']}"
+            elif diff_rating > 50:
+                strength_desc = f"favoritismo moderado da seleção de {match['home_team'] if home_rating > away_rating else match['away_team']}"
+            else:
+                strength_desc = "um confronto tático extremamente equilibrado"
+                
+            tact_analysis = (
+                f"O modelo de consenso projeta {strength_desc}. "
+                f"A seleção de {match['home_team']} (Rank FIFA: {home_rank}, Rank Pelé: {home_pele_rank}) "
+                f"enfrenta a seleção de {match['away_team']} (Rank FIFA: {away_rank}, Rank Pelé: {away_pele_rank}). "
+                f"A probabilidade de empate calculada é de {prob_d:.1f}%."
+            )
+            
+        print(f"* **O Confronto Tático:** {tact_analysis}")
+        
+        key_fac = match.get("key_factors", "").strip()
+        is_generic_key = "Análise estatística" in key_fac or not key_fac
+        if is_generic_key:
+            key_fac = f"Partida chave pela fase {match['stage']}. Os fatores físicos de altitude e temperatura da sede podem ter papel relevante."
+        print(f"* **Notícias & Fatores Físicos:** {key_fac}")
+        
+        pro_op = match.get("pro_opinion", "").strip()
+        if pro_op:
+            print(f"* **O que dizem os Profissionais:** {pro_op}")
+            
         print()
         print("**🎯 Palpites para o seu Bolão**")
         print()
@@ -1031,13 +1219,16 @@ def print_markdown_report(date_str=None):
         for idx, sp in enumerate(pred["top_scores"]):
             home_goals, away_goals = sp[0]
             prob = sp[1]
-            opt_mark = " 🎯" if (home_goals == pred["suggested"][0] and away_goals == pred["suggested"][1]) else ""
+            opt_mark = " 🎯" if (home_goals == suggested[0] and away_goals == suggested[1]) else ""
             print(f"* {home_goals}x{away_goals} - Probabilidade: {prob*100:.1f}%{opt_mark}")
-        print(f"* **O Palpite da Resenha (Para se destacar):** {match.get('cheeky_prediction', '')}")
+            
+        cheeky = match.get("cheeky_prediction", "").strip()
+        if cheeky:
+            print(f"* **O Palpite da Resenha (Para se destacar):** {cheeky}")
         print("\n" + "-" * 85)
         
     if printed_count == 0:
-        print(f"\n* Nenhuma partida da Copa do Mundo programada para a data de hoje ({datetime.now().strftime('%d/%m/%Y')}).")
+        print(f"\n* Nenhuma partida da Copa do Mundo atende aos critérios de filtro informados.")
 
 
 
@@ -1490,6 +1681,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="World Cup 2026 Prediction Manager")
     parser.add_argument("--report", action="store_true", help="Print qualitative match report")
     parser.add_argument("--date", type=str, default=None, help="Filter report for specific date (YYYY-MM-DD). Defaults to today.")
+    parser.add_argument("--team", type=str, default=None, help="Filter report by team name (e.g. Brasil)")
+    parser.add_argument("--stage", type=str, default=None, help="Filter report by stage (e.g. 'Fase de Grupos', 'Round 2')")
+    parser.add_argument("--status", type=str, default=None, help="Filter report by status (e.g. FINISHED, SCHEDULED)")
     parser.add_argument("--history", action="store_true", help="Print quantitative history performance report")
     parser.add_argument("--bolao", action="store_true", help="Print model points according to bolao rules")
     parser.add_argument("--tune", action="store_true", help="Run backtesting and optimize consensus weights")
@@ -1507,10 +1701,16 @@ if __name__ == "__main__":
         submit_scorepick_bets()
         sys.exit(0)
         
-    # If run without arguments, default to updating CSV and printing report
-    if not any(v for k, v in vars(args).items() if k != "date"):
+    # If run without arguments (or only report filters), default to updating CSV and printing report
+    report_filter_keys = {"date", "team", "stage", "status"}
+    if not any(v for k, v in vars(args).items() if k not in report_filter_keys):
         update_csv()
-        print_markdown_report(date_str=args.date)
+        print_markdown_report(
+            date_str=args.date,
+            team_str=args.team,
+            stage_str=args.stage,
+            status_str=args.status
+        )
         sys.exit(0)
         
     if args.result:
@@ -1569,7 +1769,12 @@ if __name__ == "__main__":
         update_csv()
         
     if args.report:
-        print_markdown_report(date_str=args.date)
+        print_markdown_report(
+            date_str=args.date,
+            team_str=args.team,
+            stage_str=args.stage,
+            status_str=args.status
+        )
         
     if args.history:
         print_history_report()

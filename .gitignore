@@ -12,11 +12,11 @@ __pycache__/
 .mypy_cache/
 
 # Databases
-bolao.db
-bolao.db-journal
+# bolao.db
+# bolao.db-journal
 
 # Sensitive local configurations (contains passwords)
-settings.json
+# settings.json
 
 # Local physical backups
 overhauls/
